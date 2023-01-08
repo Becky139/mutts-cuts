@@ -46,8 +46,8 @@ In the terminal, type *pip3 freeze --local > requirements.txt*.  This file tells
 
 ## Create a new Django project.
 
-To create a new *project* called *main* type the following to the terminal, `django-admin startproject main .`
-This will create new folder called `main` and a `manage.py` file in the root directory. (First deployment I called main *django_kennel* or *kennel39*. Bottom line, create the new project first.
+To create a new *project* called *main* type the following to the terminal, `django-admin startproject mutts_cuts .`
+This will create new folder called `mutts_cuts` and a `manage.py` file in the root directory. (First deployment I called main *django_kennel* or *kennel39*. Bottom line, create the new project first.
 
 ![08]()
 
