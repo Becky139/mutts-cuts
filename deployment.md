@@ -79,11 +79,11 @@ Assuming the Heroku cli has been [installed](https://devcenter.heroku.com/articl
 
 Type *heroku login -i* then provide your email and password.
 
-![01](docs/readme/local_deployment/heroku-login.png)
+![01](docs/readme/heroku_deployment/heroku-login.png)
 
 Type *heroku apps:create main --region eu* to create a new heroku app called the-kennel (if you live in the EU).
 
-![02](docs/readme/local_deployment/heroku-app.png)
+![02](docs/readme/heroku_deployment/heroku-app.png)
 
 A `Procfile` is needed in the main directory to tell Heroku the commands that are to be executed by the app on startup.  In this case we need to start a web server (gunicorn).
 
@@ -93,19 +93,19 @@ Open the Procfile and type *web: gunicorn muttscuts.wsgi*. Save the file.
 
 Commit those changes and push to GitHub using *git commit -m "Add procfile"* then enter; *git push* then enter.
 
-![03]()
+![03](docs/readme/heroku_deployment/procfile.png)
 
 In the projects `settings.py` file, add the name of the deployed apps name to *ALLOWED_HOSTS*.  In this case *'kennel39.herokuapp.com', 'localhost'*. Include localhost to run locally.
 
-![04]()
+![04](docs/readme/heroku_deployment/allowed-hosts.png)
 
 On your browser log into [Heroku](https://id.heroku.com/login) and navigate to your personal area.  Select the project just created to take you to the project's dashboard.
 
-![05]()
+![05](docs/readme/heroku_deployment/heroku-dash.png)
 
 Select *Open app* to view the deployed project in a new browser tab.  If successful you will see the following.
 
-![06]()
+![06](docs/readme/heroku_deployment/heroku-success.png)
 
 With the deployed project working, it is time to:
 
@@ -118,17 +118,17 @@ Go to *Resources* in the project dashboard and type *postgres* into the addons t
 
 Select the *Hobby Dev - Free* plan and then *Submit Order Form* on the modal.
 
-![07]()
+![07](docs/readme/heroku_deployment/heroku-prostgres.png)
 
 Go to *Settings* in the project dashboard and select *Reveal Config Vars* in the *Config Vars* section.
 
-![08]()
+![08](docs/readme/heroku_deployment/heroku-settings.png)
 
 Copy the value string for DATABASE_URL.
 
 Back in the main directory in Gitpod, create a new file named `env.py`. This will contain confidential information so ensure it is listed in the `.gitignore` file to prevent public visibility.
 
-![09]()
+![09](docs/readme/heroku_deployment/gitignore.png)
 
 In `env.py` import the os and setup environment variables including:
 
@@ -141,7 +141,7 @@ os.environ["SECRET_KEY"] = "SecretKeyOfYourChoice"
 
 Add the SECRET key to Config vars in Heroku. (for security reason the below screenshot is defunct)
 
-![10]()
+![10](docs/readme/heroku_deployment/config-vars.png)
 
 To reference the content of the `env.py` file in `settings.py`, under `from pathlib import Path` (ln #13) type
 
@@ -183,11 +183,11 @@ The above is a dictionary telling us the default database is the postgres databa
 
 To confirm the Heroku database is acting as the backend, perform migrations again by typing *python3 manage.py migrate*.
 
-![11]()
+![11](docs/readme/heroku_deployment/heroku-migrate.png)
 
 Selecting *Heroku Postgres* from *Resources* in Heroku will open a new browser tab showing it is available and contains 10 tables as below.
 
-![12]()
+![12](docs/readme/heroku_deployment/database-confirm.png)
 
 To tell Django were to store templates add the following in `settngs.py` below `BASE_DIR = Path(__file__).resolve().parent.parent` (ln #20)
 
@@ -209,7 +209,7 @@ Create 3 new top level directories for static, media and templates folders.
 
 In the main directory, type the following into the command line: (mkdir = make directory <name>)
 
-![15]()
+![15](docs/readme/heroku_deployment/mkdir.png)
 
 
 All changes that are committed and pushed from Gitpod IDE are stored on the Github repository and not the deployed Heroku side.  Is is possisble to push changes seperately to each platorm but it is easier to link GitHub to Heroku and have the latter automatically update from changes pushed to the repository.
@@ -218,15 +218,15 @@ To do so, in Heroku go to *Deploy*, select the *Connect to GitHub* button in the
 
 Then type the GitHub repository name and *Connect*.
 
-![16]()
+![16](docs/readme/heroku_deployment/connect-github.png)
 
 In the *Manual deploy* section select the *Deploy Branch* button.
 
-![17]()
+![17](docs/readme/heroku_deployment/github-deploy.png)
 
 Allow the deployed app to build then select *Open app* once complete.  You should see the same success screen as with the local deployment success except this time is has a different url.
 
-![18]()
+![18](docs/readme/heroku_deployment/heroku-deploy.png)
 
 These steps are current to the time of deployment and may change in the future.
 
