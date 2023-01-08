@@ -1,1 +1,1 @@
-gunicorn muttscuts-grooming.wsgi
+web:gunicorn muttscuts-grooming.wsgi
