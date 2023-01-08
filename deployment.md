@@ -18,60 +18,60 @@ To create a deployed a skeleton application on *Heroku* using Github/Gitpod IDE 
 
 *Django*, a full stack framework will support this project.
 
-To install, type *pip3 install Django==3.2* into the Gitpod terminal.
+To install, type *pip3 install Django<4* into the Gitpod terminal.
 
-![01]( )
+![01](docs/readme/local_deployment/django.png)
 
 Install gunicorn (web server) by typing *pip3 install gunicorn*.
 
-![02]()
+![02](docs/readme/local_deployment/gunicorn.png)
 
 Install the dj_database_url library for postgreSQL by typing *pip3 install dj_database_url*, then install the psycopg2 library for postgreSQL by typing *pip3 install psycopg2*.
 
-![03]()
+![03](docs/readme/local_deployment/dj-database.png)
 
-![04]()
+![04](docs/readme/local_deployment/psycopg2.png)
 
 Install Cloudinary by typing *pip3 install dj3-cloudinary-storage*. 
 
-![05]()
+![05](docs/readme/local_deployment/cloudinary.png)
 
 Now create a requirements.txt file in the main directory. 
 
 In the terminal, type *pip3 freeze --local > requirements.txt*.  This file tells Heroku what packages are needed to run the deployed application.  Follow this step each time a new package is installed in Gitpod.
 
-![06]()
+![06](docs/readme/local_deployment/requirements.png)
 
-![07]()
+![07](docs/readme/local_deployment/requirements-file.png)
 
 ## Create a new Django project.
 
 To create a new *project* called *main* type the following to the terminal, `django-admin startproject mutts_cuts .`
 This will create new folder called `mutts_cuts` and a `manage.py` file in the root directory. (First deployment I called main *django_kennel* or *kennel39*. Bottom line, create the new project first.
 
-![08]()
+![08](docs/readme/local_deployment/project.png)
 
-![09]()
+![09](docs/readme/local_deployment/main-django.png)
 
 Now create an app called `home` within the project. Type *python3 manage.py startapp home* (NB. Project apps should be differentiated by functionality. This app will act as the homepage. First runtrhough I used *accounts* instead of home.
 
-![10]()
+![10](docs/readme/local_deployment/home-app.png)
 
-![11]()
+![11](docs/readme/local_deployment/app-accounts.png)
 
 Open the `settings.py` file in the `main` **project** folder and add the newly created *home* app to the bottom of the Installed Apps list.  Remember to add a comma to the end even though it's the last list entry. First attempt I used *accounts*. Use *home* instead.
 
-![12]()
+![12](docs/readme/local_deployment/add-home.png)
 
 In the terminal, type *python3 manage.py migrate* to update the database schema used by Django.  
 
-![13]()
+![13](docs/readme/local_deployment/migrate.png)
 
 In the terminal, type *python3 manage.py runserver* to verify local deployment.  A message to open a page in the browser pops up using *port 8000*.
 
 If Gitpod has a glitch and doesn't provide this popup, copy the url in the browser then paste into a new tab.  Add *8000-*. immediately after *https://*.
 
-![14]()
+![14](docs/readme/local_deployment/project-view.png)
 
 ## Set up project to use a relational database (PostgreSQL)
 
@@ -79,17 +79,17 @@ Assuming the Heroku cli has been [installed](https://devcenter.heroku.com/articl
 
 Type *heroku login -i* then provide your email and password.
 
-![01]()
+![01](docs/readme/local_deployment/heroku-login.png)
 
 Type *heroku apps:create main --region eu* to create a new heroku app called the-kennel (if you live in the EU).
 
-![02]()
+![02](docs/readme/local_deployment/heroku-app.png)
 
 A `Procfile` is needed in the main directory to tell Heroku the commands that are to be executed by the app on startup.  In this case we need to start a web server (gunicorn).
 
 In the terminal, type *git add Procfile*.
 
-Open the Procfile and type *web: gunicorn main.wsgi:application*. Save the file.
+Open the Procfile and type *web: gunicorn muttscuts.wsgi*. Save the file.
 
 Commit those changes and push to GitHub using *git commit -m "Add procfile"* then enter; *git push* then enter.
 
