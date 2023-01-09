@@ -22,7 +22,6 @@
 6. [Testing](#Testing)
     1. [Testing.md](TESTING.md)
 7. [Deployment](#Deploment)
-    1. [Deploying on GitHub Pages](#Deploying-on-GitHub-Pages)
 8. [Credits](#Credits)
     1. [Content](#Content)
     2. [Media](#Media)
@@ -198,7 +197,11 @@ The developer ran into several issues during the development of the website, wit
 
 Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
 
-### Deploying on GitHub Pages
+### Deployment
+
+The site has been deployed early.  More dependancies may be added at a later time.
+
+This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Credits
 
