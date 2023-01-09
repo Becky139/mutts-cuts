@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mutts Cuts</title>
+    {% include 'includes/head.html' %}
 </head>
 <body>
-    <h1>Base HTML</h1>
+
+    <header>
+        {% include 'includes/navbar.html' %}
+    </header>
+
+    <div>
+        <h1>Base HTML</h1>
     <p>remove this content after test</p>
+    </div>
+
+    <footer>
+        {% include 'includes/footer.html' %}
+    </footer>
+
+    <script>
+        {% include 'includes/scripts.html' %}
+    </script>
+
 </body>
 </html>
