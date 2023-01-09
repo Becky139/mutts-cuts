@@ -69,6 +69,38 @@ Site user needs can broadly be split into 4 categories:
 - bookings management
 - other
 
+NAVIGATION
+
+- **As a** unregistered user, **I can** navigate to a page **so that** I can view the services offered by the business
+- **As a** unregistered user, **I can** follow a link **so that** I can view the Kennel's social media content
+- **As a** unregistered user, **I can** use a sidenav **so that** I can navigate the site on all views
+- *AS A* user, **I can** select a link **so that** I can register/ log in to my account
+
+ACCOUNT MANAGEMENT
+
+- **As a** unregistered user, **I can** provide details **so that** I can create a unique account
+- **As a** registered user, **I can** provide details **so that** I can login to my account
+- **As a** unregistered user, **I can** create a unique password **so that** I can protect my personal account
+- *AS A* logged in user, **I can** view a page **so that** I can see my personal account details by individual field 
+- *AS A* logged in user, **I can** click a button **so that** I can change my personal account details by individual field 
+- *AS A* logged in user, **I can** click a button **so that** I can delete my account
+- *AS A* logged in user, **I can** request an email **so that** I can reset my account password if I have forgotten it
+
+BOOKINGS MANAGEMENT
+
+- *AS A* logged in user, **I can** provide booking details **so that** I can set up appointment
+- *AS A* logged in user, **I can** update details **so that** I can reschedule an appointment with the Kennel
+- *AS A* logged in user, **I can** cancel an appointment **so that** I can cancel an appointment with the Kennel
+
+- *AS A* logged in user, **I can** request an email **so that** be reminded of an appointment
+- *As a** employee, **I can** view a page **so that** I can see my daily bookings or the current day
+
+OTHER
+
+- *AS A* user, **I can** view the site on a small screen **so that** I can use it when traveling with a mobile device
+
+- **As a** unregistered user, **I can** view the landing page **so that** I understand the site's purpose
+
 ### Design Thinking
 
 Applying a *Design Thinking* approach, what *features* would users find most useful on the developed site?  How feasible is it for an inexperienced student developer to deliver prioritised features given the time constraints of a hard deadline?
@@ -91,6 +123,12 @@ As per assessment criteria, this project must utilise CRUD functionality.  This 
 | **Overall Score**                       | **40**     | **44**      |
     
 The above exercise indicates that overall importance/feasability scores were similar.  Therefore the project should be deliverable.
+
+## Database Design
+
+Entity Relationship Diagrams help to visualise database architecture before creating models in Django.  Understanding the relationships between different tables can save time recoding later in the project.  Fortunately this system is quite simple so only 4 tables are required.
+
+![Mutts Cuts ERD](docs/readme/mutts-cuts-erd-v1.png)
 
 #### Scope
 
