@@ -208,7 +208,7 @@ The developer ran into several issues during the development of the website, wit
 
 ## Testing
 
-Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
+Refer to [TESTING.md](TESTING.md) for details on manual and automated testing.
 
 ### Deployment
 
