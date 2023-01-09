@@ -1,4 +1,4 @@
-# Mutts Cuts
+# Mutts-Cuts
 
 ![mockup images]()
 
@@ -21,7 +21,8 @@
     2. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 6. [Testing](#Testing)
     1. [Testing.md](TESTING.md)
-7. [Deployment](#Deploment)
+7. [Deployment](#Deployment)
+    1. [Deployment.md](DEPLOYMENT.md)
 8. [Credits](#Credits)
     1. [Content](#Content)
     2. [Media](#Media)
@@ -159,7 +160,7 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 </details>   
 
 
-[Back to top]()
+[Back to top](#Mutts-Cuts)
 
 ## Features
 
@@ -172,26 +173,36 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 ### Features to Implement in the future
 
 
-[Back to top]()
+[Back to top](#Mutts-Cuts)
 
 ## Issues and Bugs
 The developer ran into several issues during the development of the website, with the noteworthy ones listed below, along with solutions or ideas to implement in the future.
 
 
 
-[Back to top]()
+[Back to top](#Mutts-Cuts)
 
 ## Technologies Used
 
 ### Main Lanuages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to Python Wiki")
 
 ### Frameworks, Libraries & Programs Used
 
+- [Balsamiq](https://balsamiq.com/)
+- [Lucidchart](https://lucid.co/)
+- [Adobe Color](https://color.adobe.com/)
+- [GitHub](https://github.com/)
+- [Heroku](https://id.heroku.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [JQuery](https://jquery.com/) 
+- [Django](https://www.djangoproject.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Cloudinary](https://cloudinary.com/)
 
-
-[Back to top]()
+[Back to top](#Mutts-Cuts)
 
 ## Testing
 
@@ -214,12 +225,12 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 ### Code
 
 
-[Back to top]()
+[Back to top](#Mutts-Cuts)
 
 ## Acknowledgements
 
 
 
-[Back to top](#)
+[Back to top](#Mutts-Cuts)
 
 ***
