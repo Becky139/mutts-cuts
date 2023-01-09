@@ -27,7 +27,7 @@
 ### Reflections
 
 Several false starts.
-Got more comfortable using an Agile tool to plan functionality.  Applied retrospectively to 1st week objectives to practice how it works.
+Got more comfortable using an Agile tool to plan functionality.  Applied retrospectively for the project creation objectives to practice how it works.
 This was effectively the first iteration for the project before any real coding took place. After setting up and getting the inital deploy, I focused on building out part of the frontend.  The `home` app will contain the index page for the site.
 The templates folder in the root directory contains the base.html *et al* templates.  From what I've learned so far different webpage components should be injected into each template.  Follow a modular/reusable/extension approach.  
 
