@@ -152,11 +152,13 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 <details>
 <summary>Balsamiq Wireframes</summary>
     
-![Site Wireframes]()
-![Site Wireframes]()
-![Site Wireframes]()
-![Site Wireframes]()
-![Site Wireframes]()
+![Site Wireframes](docs/readme/wireframes/00-index-page.png)
+![Site Wireframes](docs/readme/wireframes/01-our-services.png)
+![Site Wireframes](docs/readme/wireframes/02-join-us.png)
+![Site Wireframes](docs/readme/wireframes/03-my-account.png)
+![Site Wireframes](docs/readme/wireframes/04-book-now.png)
+![Site Wireframes](docs/readme/wireframes/05-my-appointments.png)
+![Site Wireframes](docs/readme/wireframes/06-daily-calender.png)
 </details>   
 
 
