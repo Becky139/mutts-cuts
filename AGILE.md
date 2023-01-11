@@ -30,7 +30,7 @@ In a way I'll already started categorising user stories by area such as navigati
 
 I found I was jumping from one task to the next with no real direction.  Best to plan each future iteration to make it easier to track what still needs to be done.
 
-![01]()
+![01](docs/readme/agile/sprint-1-kanban-use.PNG)
 
 ## Sprint 2
 - Setup base.html
@@ -52,6 +52,6 @@ TWIL (This week I learned) after creating a new project, cards can be dragged ac
 
 ![01]()
 
-![02]()
+![02](docs/readme/agile/sprint-2-kanban-use.PNG)
 
 Use bootstrap for speed.  Copy their [code](https://getbootstrap.com/docs/5.0/components/navs-tabs/) rather than start from scratch.
