@@ -203,6 +203,8 @@ The developer ran into several issues during the development of the website, wit
 - [Django](https://www.djangoproject.com/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Cloudinary](https://cloudinary.com/)
+- [Favicon-Icons8](https://icons8.com/)
+
 
 [Back to top](#Mutts-Cuts)
 
@@ -217,6 +219,8 @@ The site has been deployed early.  More dependancies may be added at a later tim
 This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Credits
+
+- Favicon by [Icons8](https://icons8.com/icons/set/favicon-dog)
 
 ### Content
 
