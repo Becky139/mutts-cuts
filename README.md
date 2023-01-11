@@ -220,7 +220,8 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Credits
 
-- Favicon by [Icons8](https://icons8.com/icons/set/favicon-dog)
+- Favicon by [Icons8](https://icons8.com/icons/set/favicon-dog-paw)
+- Facebook and LinkedIn icons by [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands)
 
 ### Content
 
