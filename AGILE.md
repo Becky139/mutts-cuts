@@ -30,7 +30,7 @@ In a way I'll already started categorising user stories by area such as navigati
 
 I found I was jumping from one task to the next with no real direction.  Best to plan each future iteration to make it easier to track what still needs to be done.
 
-![01](docs/readme/agile/sprint-1-kanban-use.PNG)
+![01](docs/readme/agile/sprint-1-kanban-use-01.PNG)
 
 ## Sprint 2
 - Setup base.html
@@ -50,8 +50,10 @@ Also it's useful to have some templates to link to models via views when the tim
 TWIL (This week I learned) after creating a new project, cards can be dragged across from the add card area.  Also helps to use checkboxes to tick off smaller tasks relating to a larger one.
 
 
-![01]()
+![01](docs/readme/agile/sprint-2-subtasks-01.png)
 
-![02](docs/readme/agile/sprint-2-kanban-use.PNG)
+![02](docs/readme/agile/sprint-2-kanban-use-02.PNG)
 
 Use bootstrap for speed.  Copy their [code](https://getbootstrap.com/docs/5.0/components/navs-tabs/) rather than start from scratch.
+
+![03](docs/readme/agile/03-week-2-bootstrap-use.png)

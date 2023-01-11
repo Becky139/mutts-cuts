@@ -94,7 +94,36 @@ These are generic for the project.  No social content exists as the business doe
 
 ![social-files-links-open-in-new-tab](docs/readme/testing/04-social-files-links-open-in-new-tab.png "social-files-links-open-in-new-tab")
 
+**#7. Check index.html template is using base.html template**
 
+Extend `base.html` content to any view by using `{% extends 'base.html' %}` at the top of each file.  Best to test this on the site landing page as this is the first one that is created.
+
+*home/templates/home/index.html*
+``` html
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Homepage</h1>  <!-- unique content -->
+{% endblock %}
+```
+
+Note, the `home` app urls are already linked up to `main` urls as checked in **#2**.
+
+
+*templates/base.html*
+``` html
+    <p>base.html</p>  <!-- remove after demo for TESTING.md -->
+
+    {% block content %}
+    <!-- content goes here -->
+    {% endblock %}
+```
+
+The base.html text originates from the `base.html` file.
+The h1 heading containing text *Homepage* only exists in `index.html`.
+
+![check-base-injecting-to-index-view.png](docs/readme/testing/05-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
 
 ## Automated Testing
 

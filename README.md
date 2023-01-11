@@ -222,6 +222,7 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 - Favicon by [Icons8](https://icons8.com/icons/set/favicon-dog-paw)
 - Facebook and LinkedIn icons by [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands)
+- Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
 
 ### Content
 
