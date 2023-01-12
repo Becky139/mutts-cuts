@@ -18,7 +18,7 @@ To create a deployed a skeleton application on *Heroku* using Github/Gitpod IDE 
 
 *Django*, a full stack framework will support this project.
 
-To install, type *pip3 install Django<4* into the Gitpod terminal.
+To install, type *pip3 install 'Django<4'* into the Gitpod terminal.
 
 ![01](docs/readme/local_deployment/01-django3.2-install.png)
 
