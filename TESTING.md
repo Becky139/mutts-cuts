@@ -83,16 +83,24 @@ In the plate above you'll also notice a favicon present.  The test was successfu
 **TODO** -= review issue #25 in GitHub project `Week-2-create-basic-front-end`
 **#5. Checking static folder is working on deployed site**
 
-Any images stored in `static/img/` folder should display when deployed.  Remember to delete the DISABLE_COLLECTSTATIC config var in Heroku Settings0 by clicking on the X.
+Any images stored in `static/img/` folder should display when deployed.  Remember to delete the DISABLE_COLLECTSTATIC config var in Heroku Settings by clicking on the X.
 
-![ensure-static-files-work-when-deployed](docs/readme/testing/ "ensure-static-files-work-when-deployed")
+![ensure-static-files-work-when-deployed](docs/readme/testing/03-ensure-static-files-work-when-deployed.png "ensure-static-files-work-when-deployed")
+
+When I did deleted this config var and tried to redeploy, the build log stated `python manage.py collectstatic --noinput`.
+
+This prompted a different approach to handling static files by installing the [`dotenv`](https://pypi.org/project/python-dotenv/) python package.  From there i updated the `requirements.txt` file and `settings.py` and `env.py` files in the project before pushing to GitHub again.
+
+![ensure-static-files-work-when-deployed](docs/readme/testing/04-ensure-static-files-work-when-deployed.png "ensure-static-files-work-when-deployed")
+
+Success. The hero image from the static folder now works on the deployed site resolving [issue #25]
 
 
 **#6. Ensure social media links in footer open in a new browser tab**
 
 These are generic for the project.  No social content exists as the business does not exist.
 
-![social-files-links-open-in-new-tab](docs/readme/testing/04-social-files-links-open-in-new-tab.png "social-files-links-open-in-new-tab")
+![social-files-links-open-in-new-tab](docs/readme/testing/05-social-media-links-open-in-new-tab.PNG "social-files-links-open-in-new-tab")
 
 **#7. Check index.html template is using base.html template**
 
@@ -123,7 +131,10 @@ Note, the `home` app urls are already linked up to `main` urls as checked in **#
 The base.html text originates from the `base.html` file.
 The h1 heading containing text *Homepage* only exists in `index.html`.
 
-![check-base-injecting-to-index-view.png](docs/readme/testing/05-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
+![check-base-injecting-to-index-view.png](docs/readme/testing/06-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
+
+**#8** Correct `settings.py` and `.env` file setup.
+After resolving [issue #25](https://github.com/StevenWeir038/Kennel39/projects/2#card-78901276), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up enviroinment variables and referencing them corrrectly.
 
 ## Automated Testing
 
