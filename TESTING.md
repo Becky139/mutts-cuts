@@ -134,7 +134,7 @@ The h1 heading containing text *Homepage* only exists in `index.html`.
 ![check-base-injecting-to-index-view.png](docs/readme/testing/06-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
 
 **#8** Correct `settings.py` and `.env` file setup.
-After resolving [issue #25](https://github.com/StevenWeir038/Kennel39/projects/2#card-78901276), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up enviroinment variables and referencing them corrrectly.
+After resolving [issue #28](https://github.com/Becky139/mutts-cuts/issues/28), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up [environment variables](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) and referencing them corrrectly.
 
 ## Automated Testing
 
