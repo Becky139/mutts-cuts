@@ -56,11 +56,11 @@ TWIL (This week I learned) after creating a new project, cards can be dragged ac
 
 Use bootstrap for speed.  Copy their [code](https://getbootstrap.com/docs/5.0/components/navs-tabs/) rather than start from scratch.
 
-![03](docs/readme/agile/03-week-2-bootstrap-use.png)
+![03](docs/readme/agile/03-sprint-2-bootstrap-use.png)
 
 Start to tailor the bootstrap code to something more site specific.
 
-![basic-menu-setup](docs/readme/agile/week-2-basic-menu-setup.png "basic-menu-setup")
+![basic-menu-setup](docs/readme/agile/sprint-2-basic-menu-setup.png "basic-menu-setup")
 
 With a basic navbar in place, this will have to be updated as new views/respective templates are created to deliver user story functionality.
 
@@ -84,7 +84,7 @@ Removed User Story #18 from sprint 2 project - As a unregistered user I can view
 
 Technically services are a different function.  Time for a new *services* app!  #18 can drop into a future project week.  I feel it's best to get authenication working next as this affects the navbar.  Next logical step to complete that.
 
-I want to fix [issue #5]() to wrap up this week.
+I want to fix [issue #5](https://github.com/Becky139/mutts-cuts/issues/28) to wrap up this week.
 
 ## Sprint 3
 - Install `allauth` package
@@ -98,3 +98,7 @@ I want to fix [issue #5]() to wrap up this week.
 ### Reflections
 This week it wanted to focus on user accounts and authentication as that alters the navbar options through use of django templates.
 Also, I realised I had to revise my use of Bootstrap as much of this knowledge hasn't been used in a few months.  By developing a generic landing page using Bootstrap I can speed up the creation of future templates.  Bespoke css/js/jquery can be added at a later time for a less derivative site.
+
+Seven user stories satisfied this week.
+
+![01](docs/readme/agile/sprint-3-kanban-use.png ")
