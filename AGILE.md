@@ -85,3 +85,16 @@ Removed User Story #18 from sprint 2 project - As a unregistered user I can view
 Technically services are a different function.  Time for a new *services* app!  #18 can drop into a future project week.  I feel it's best to get authenication working next as this affects the navbar.  Next logical step to complete that.
 
 I want to fix [issue #5]() to wrap up this week.
+
+## Sprint 3
+- Install `allauth` package
+- Add allauth to installed applications in settings.py
+- Add login/logout redirects back to index page
+- Perform migrations
+- Adapt navigation bar using Django Templates to to give registered/unregistered site users different menu options
+
+- develop the landing page a little more using bootstrap. Aim to get the hero image to display correctly. Use its FSF approach to develop the frontend faster.
+
+### Reflections
+This week it wanted to focus on user accounts and authentication as that alters the navbar options through use of django templates.
+Also, I realised I had to revise my use of Bootstrap as much of this knowledge hasn't been used in a few months.  By developing a generic landing page using Bootstrap I can speed up the creation of future templates.  Bespoke css/js/jquery can be added at a later time for a less derivative site.
