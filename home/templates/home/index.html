@@ -6,15 +6,18 @@
 {% endblock %}
 
 {% block content %}
-<h1>Homepage</h1>
 
-<img src={% static 'img/hero-dog_qfvcbc.jpg' %} alt="Homepage image">
-<h1>Mutts Cuts Grooming</h1>
-<h3>Superior Dog Grooming</h3>
-<h5>Est. 2023</h5>
+<section id="landing" class="d-flex justify-content-center d-flex align-items-center text-center h-100 d-inline-block rounded" style="background: url({% static 'img/hero-dog.png' %}) center center/cover no-repeat">
+    <div>
+        <h1 class="display-1 text-white bg-dark font-weight-bold rounded p-1">Mutts Cuts Grooming</h1>
+        <h4 class="text-white bg-dark rounded p-1"><em>Superior Dog Grooming</em></h5>
+        <h5 class="text-white bg-dark rounded p-1"><em>Est. 2023</em></h5>
 
-<!-- code 3 buttons, Our Services, Join Us, Book Now -->
-<button>Our Services</button>
-<button>Join Us</button>
-<button>Book Now</button>
+        <!-- Code 3 Call to Action(CTA) buttons, Our Services, Join Us, Book Now -->
+        <button class="btn btn-primary">Our Services</button>
+        <button class="btn btn-primary">Join Us</button>
+        <button class="btn btn-primary">Book Now</button>
+    </div>
+</section>
+
 {% endblock %}
