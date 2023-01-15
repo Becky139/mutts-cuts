@@ -204,6 +204,7 @@ The developer ran into several issues during the development of the website, wit
 - [PostgreSQL](https://www.postgresql.org/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon-Icons8](https://icons8.com/)
+- [Allauth](https://django-allauth.readthedocs.io/en/latest/)
 
 
 [Back to top](#Mutts-Cuts)
@@ -225,6 +226,7 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 - Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
 - Landing page image from [Google Images](https://images.google.co.uk/)
 - Thanks to [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide
+- For his useful Bootstra revision sheet, [Alexander Rechsteiner](https://hackerthemes.com/bootstrap-cheatsheet/)
 
 ### Content
 
