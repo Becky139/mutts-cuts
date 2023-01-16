@@ -136,6 +136,62 @@ The h1 heading containing text *Homepage* only exists in `index.html`.
 **#8** Correct `settings.py` and `.env` file setup.
 After resolving [issue #28](https://github.com/Becky139/mutts-cuts/issues/28), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up [environment variables](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) and referencing them corrrectly.
 
+**#9** Check `allauth` working with nav links.
+Allauth did the hard work for signup/login/logout.  Just had to configure `navbar.html` with Django templates to check authentication. 
+A test account was created to check it worked.
+``` html
+<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Our Services</a>
+    </li>
+    {% if user.is_authenticated %}
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Book Appointment</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+    </li>
+    {% endif %}
+</ul>
+```
+*Unregistered/Logged out menu*
+![check-logged-out-menu](docs/readme/testing/07-check-logged-out-menu.png "check-logged-out-menu")
+*Login page*
+![allauth-login-page](docs/readme/testing/08-allauth-login-page.png "allauth-login-page")
+*Registered/Logged in menu*
+![check-logged-in-menu](docs/readme/testing/09-check-logged-in-menu.png "check-logged-in-menu")
+*Logout page*
+![allauth-logout-page](docs/readme/testing/10-allauth-logout-page.png "allauth-logout-page")
+*Proof of Registration in site admin*
+
+![reg-users-site-admin-page](docs/readme/testing/11-reg-users-site-admin-page.png "reg-users-site-admin-page")
+
+**#10** Check 1st model has successfully migrated. (same checks to be applied to all subsequent models after creation or update)
+
+In CLI, type `python3 manage.py makemigrations --dry-run` to view unexecuted effect. This tells Django to create instructions that build a new database table in the `home` app.
+
+Remove the ` --dry-run` flag to perform the action.
+
+Use the `python3 manage.py showmigrations` command to see a list of existing migrations.  The absence of an `X` in the home app 0001_initial tells us we have yet to migrate this particular model to build the database table in the backend.
+
+![makemigrations-profile-model](docs/readme/testing/12-makemigrations-profile-model.png "makemigrations-profile-model")
+
+To create the database table in the backend type `python3 manage.py migrate` into the terminal. Similar to the --dry-run tag in makemigrations, the ` --plan` flag can be used to preview the effects of migrating before applying.
+
+![migrate-profile-model](docs/readme/testing/13-migrate-profile-model.png "migrate-profile-model")
+
+To reiterate, `makemigrations` are the instructions to build a table, the `migrate` command actually to builds it.
+
 ## Automated Testing
 
 Return to[README.md](README.md)
