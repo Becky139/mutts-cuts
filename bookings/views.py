@@ -3,8 +3,15 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def bookings(request):
+def create_booking(request):
     """
-    Bookings view
+    Create booking
     """
-    return render(request, 'bookings/bookings.html')
+    return render(request, 'bookings/create_booking.html')
+
+
+def view_booking(request):
+    """
+    View booking 
+    """
+    return render(request, 'bookings/view_booking.html')
