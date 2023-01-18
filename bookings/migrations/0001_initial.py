@@ -19,8 +19,11 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('pet_name', models.CharField(max_length=15)),
                 ('booking_time', models.DateTimeField(unique=True)),
-                ('service_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='services.services')),
+                ('service_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='services.service')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
+            options={
+                'ordering': ['booking_time'],
+            },
         ),
     ]

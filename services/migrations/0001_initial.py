@@ -10,9 +10,9 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Services',
+            name='Service',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('service_id', models.AutoField(primary_key=True, serialize=False)),
                 ('service_name', models.CharField(max_length=20)),
                 ('service_desc', models.TextField(max_length=255)),
             ],
