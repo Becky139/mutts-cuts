@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Booking
 
 # Create your views here.
 
@@ -12,6 +13,10 @@ def create_booking(request):
 
 def view_booking(request):
     """
-    View booking 
+    View booking
     """
-    return render(request, 'bookings/view_booking.html')
+    bookings = Booking.objects.all()
+    context = {
+        'bookings': bookings
+    }
+    return render(request, 'bookings/view_booking.html', context)
