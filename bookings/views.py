@@ -31,3 +31,14 @@ def create_booking(request):
         'form': form
     }
     return render(request, 'bookings/create_booking.html', context)
+
+
+def edit_booking(request, booking_id):
+    """"
+    Edit Booking
+    """
+    from = BookingForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'bookings/edit_booking.html', context)
