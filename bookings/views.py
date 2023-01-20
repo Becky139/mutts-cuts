@@ -37,9 +37,13 @@ def edit_booking(request, booking_id):
     """"
     Edit Booking
     """
-    from = BookingForm()
     booking = get_object_or_404(Booking, id=booking_id) # get instance of the record or retur 404 error if nothing found
-    from = BookingForm(instance=booking)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('view_booking')
+    form = BookingForm(instance=booking)
     context = {
         'form': form
     }
