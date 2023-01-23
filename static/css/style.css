@@ -60,7 +60,7 @@ footer {
 
 /* Datepicker */
 .ui-datepicker {
-  background-color: rgba(var(--theme-two), 1);
+  background-color: rgba(var(--theme-three), 1);
   }
   
   .ui-datepicker-header {
@@ -95,4 +95,18 @@ footer {
   border: 0px;
   background: rgba(var(--theme-three), 1);
   color: white;
+  }
+
+  
+/* Buttons */
+.btn {
+  background: rgba(var(--theme-one), 1);
+  border: 3px solid black;
+  color: white; 
+  }
+  
+  .btn:hover {
+  background: rgba(var(--theme-two), 1);
+  border: 3px solid black;
+  color: rgba(var(--theme-five), 1);
   }
