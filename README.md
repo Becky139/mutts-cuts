@@ -227,6 +227,8 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Credits
 
+### Content
+
 - Favicon by [Icons8](https://icons8.com/icons/set/favicon-dog-paw)
 - Facebook and LinkedIn icons by [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands)
 - Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
@@ -237,9 +239,7 @@ This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 - [Tutorials Point](https://www.tutorialspoint.com/python_data_access/python_postgresql_drop_table.htm) for guidance working directly with Postgres tables.
 - Youtube tutorial *58 - Django urls, includes, and app name - Python & Django 3.2 Tutorial Series* by [
 CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
-
-### Content
-
+- Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
      
 ### Media
 
