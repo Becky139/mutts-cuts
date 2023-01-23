@@ -20,7 +20,7 @@
     --theme-three: 151, 191, 4;
     /* dark cream D9D0BF*/
     --theme-four: 217, 208, 191;
-    /* bright orange F22C05 */
+    /* bright orange F25C05 */
     --theme-five: 242, 44, 5;
 }
 
@@ -52,8 +52,47 @@ footer {
   left: 0;
 }
 
-/* carousel images */
+/* Carousel images */
 .carousel-item {
   height: 630px;
   overflow: hidden;
 }
+
+/* Datepicker */
+.ui-datepicker {
+  background-color: rgba(var(--theme-two), 1);
+  }
+  
+  .ui-datepicker-header {
+  background-color: rgba(var(--theme-one), 1);
+  }
+  
+  .ui-datepicker-title {
+  color: white;
+  }
+  
+  .ui-datepicker-calendar{
+      color: white;
+  }
+  
+  .ui-widget-content .ui-state-default {
+  border: 1px;
+  text-align: center;
+  background: rgba(var(--theme-four), 1);
+  font-weight: normal;
+  color: black;
+  }
+  
+  .ui-widget-content .ui-state-default:hover {
+  border: 1px ;
+  text-align: center;
+  background: rgba(var(--theme-five), 1);
+  font-weight: normal;
+  color: white;
+  }
+  
+  .ui-widget-content .ui-state-active {
+  border: 0px;
+  background: rgba(var(--theme-three), 1);
+  color: white;
+  }
