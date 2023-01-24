@@ -18,8 +18,9 @@
                 <th>Service Type</th>
                 <th>Edit</th>
                 <th>Cancel</th>
+                
                 {% for booking in bookings %}
-                <tr>
+                <tr class="booking-row">
                     <td>{{ booking.user }}</td>  <!-- mask user name for privacy or simply remove this filed from rendered template... -->
                     <td>{{ booking.pet_name }}</td>
                     <td>{{ booking.date }}</td>
