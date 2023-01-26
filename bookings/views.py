@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Booking
 from .forms import BookingForm
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Create your views here.
 
@@ -12,8 +12,8 @@ def view_booking(request):
     """
     View booking
     """
-    date_threshold = datetime.now()
-    bookings = Booking.objects.filter(date__gte=date_threshold)
+    today_date = datetime.now()
+    bookings = Booking.objects.filter(date__gte=today_date)
     context = {
         'bookings': bookings
     }
@@ -63,6 +63,9 @@ def edit_booking(request, booking_id):
 
 @login_required()
 def cancel_booking(request, booking_id):
+    """
+    Cancel booking
+    """
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
     return redirect('view_booking')
