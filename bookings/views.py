@@ -67,6 +67,7 @@ def edit_booking(request, booking_id):
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
+            # will need same logic here as in create booking to prevent booking clashes.
             form.save()
             return redirect('view_booking')
     form = BookingForm(instance=booking)

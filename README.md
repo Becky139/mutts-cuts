@@ -124,6 +124,15 @@ As per assessment criteria, this project must utilise CRUD functionality.  This 
     
 The above exercise indicates that overall importance/feasability scores were similar.  Therefore the project should be deliverable.
 
+## Colour Schema
+The colour schema was selected from [Adobe Color](https://color.adobe.com/search?q=dog).
+The developed site should appear bright to contrast with the negative space.
+In keeping with the dog theme, colours are based of the *Mystery Machine* as seen in [Scooby-Doo](https://en.wikipedia.org/wiki/Scooby-Doo).
+
+![colour-schema](docs/readme/colour-schema.png "colour schema")
+
+![colour-accessibility](docs/readme/colour-accessibility.png "colour accessibility")
+
 ## Database Design
 
 Entity Relationship Diagrams help to visualise database architecture before creating models in Django.  Understanding the relationships between different tables can save time recoding later in the project.  Fortunately this system is quite simple so only 4 tables are required.
