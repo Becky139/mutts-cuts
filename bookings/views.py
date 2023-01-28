@@ -76,6 +76,7 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             # will need same logic here as in create booking to prevent booking clashes.
             form.save()
+            messages.success(request, f'Your appointment for {pet_name} has been changed.')
             return redirect('view_booking')
     form = BookingForm(instance=booking)
     context = {
