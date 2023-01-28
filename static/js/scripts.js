@@ -8,7 +8,7 @@
  * Limit date range from today to 12 months
 */
 $(document).ready(function() {
-  $( "#datepicker" ).datepicker({ dateFormat: "MM d, yy", minDate: +0, maxDate: "+12M +0D" });
+  $( "#datepicker" ).datepicker({ dateFormat: "MM d, yy", minDate: +0, maxDate: "+12M +0D, beforeShowDay: $.datepicker.noWeekends" });
   $( "#datepicker" ).datepicker("option", "showAnim", "fold");
   $( "#datepicker" ).datepicker("setDate", '0');
 });
