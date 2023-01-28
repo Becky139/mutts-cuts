@@ -4,8 +4,7 @@ from .models import Booking
 
 
 class DateInput(forms.DateInput):
-    """"
-    Datefield widget in form
+    """Datefield widget in form
     """
     input_type = 'date'
 

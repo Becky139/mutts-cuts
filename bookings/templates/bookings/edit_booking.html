@@ -2,21 +2,20 @@
 {% load static %}
 
 {% block content %}
-
-<section class="d-flex flex-column justify-content-center align-items-center text-center min-vh-100"> 
-    <div class="row">
+<section class="d-flex flex-column justify-content-center align-items-center text-center min-vh-100">
+    <div id="booking-form-container" class="row">
         <div class="col">
-            <p>EDIT BOOKING</p>
+            <h1>Edit Booking</h1>
             <form id="booking-form" method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <p>
-                <button class="btn" type="submit" role="button">Update</button>
-            </p>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <p>
+                    <button class="btn" type="submit" role="button">Update</button>
+                    <hr>
+                    <a class="btn" href="{% url 'view_booking' %}" role="button">Go Back</a>
+                </p>
             </form>
         </div>
     </div>
-
 </section>
-
 {% endblock %}
