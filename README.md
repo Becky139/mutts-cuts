@@ -1,6 +1,6 @@
 # Mutts-Cuts
 
-![mockup images]()
+![mockup images](docs/readme/responsive.PNG "Website preview at different resolutions"))
 
 [View The Live Project Here]()
 
