@@ -276,18 +276,21 @@ It was also much easier to setup.
 - Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
 - Landing page image from [Google Images](https://images.google.co.uk/)
 - [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide.  In the end I choose an alternative method but it could be useful for future development.
-- For his useful Bootstra revision sheet, [Alexander Rechsteiner](https://hackerthemes.com/bootstrap-cheatsheet/)
 - For dog breed [images](https://www.purina.co.nz/find-a-pet/dog-breeds) used in the carousel element.
+- Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
+
+
+### People
+
+My thanks to:
 - [Tutorials Point](https://www.tutorialspoint.com/python_data_access/python_postgresql_drop_table.htm) for guidance working directly with Postgres tables.
 - Youtube tutorial *58 - Django urls, includes, and app name - Python & Django 3.2 Tutorial Series* by [
 CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
-- Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
-     
-### Media
-
-
-### Code
-
+- [AJ Welch](https://chartio.com/resources/tutorials/how-to-filter-for-empty-or-null-values-in-a-django-queryset/) for a bolstering my understanding of Django lookups.
+- [LearnerAndLearn](https://stackoverflow.com/a/65065813) for there explanation on the difference between multiple arguments and chain filtering and how that affects SQL queries.
+- For his useful Bootstrap revision sheet, [Alexander Rechsteiner](https://hackerthemes.com/bootstrap-cheatsheet/)
+- [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide.  In the end I choose an alternative method but it could be useful for future development.
+- Fellow students, David Bowers and Helena Johansson for their moral support.  They kept me going during periods of self doubt.
 
 [Back to top](#Mutts-Cuts)
 
