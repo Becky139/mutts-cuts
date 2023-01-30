@@ -154,11 +154,13 @@ In keeping with the dog theme, colours are based of the *Mystery Machine* as see
 
 ## Database Design
 
-Entity Relationship Diagrams help to visualise database architecture before creating models in Django.  Understanding the relationships between different tables can save time recoding later in the project.  Fortunately this system is quite simple so only 4 tables are required.
+Entity Relationship Diagrams help to visualise database architecture before creating models in Django.  Understanding the relationships between different tables can save time recoding later in the project.  Fortunately this system is quite simple so only 4 tables are [required](docs/readme/mutts-cuts-erd.png.png "mutts-cuts-erd").
+
+Update - mid project it was discovered there was no need for a calendar table.  This can be omitted from the ERD.
 
 ![Mutts Cuts ERD](docs/readme/mutts-cuts-erd-v1.png)
 
-Update - mid project it was discovered there was no need for a calendar table.  This can be omitted from the ERD.
+
 
 #### Scope
 
