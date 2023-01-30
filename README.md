@@ -204,11 +204,67 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 ## Features
 
 **SCREENSHOOTS AND BRIEF SYNOPSIS OF MAIN SITE FEATURES TO GO HERE**
+**Useful Hint**
+In *DevTools*, in the Elements tab, right click on the target element and select `Capture node screenshot`.
+Useful for creating image files for readme.
 
 ### Design Features
 
 
 ### Existing Features
+
+Landing Page
+
+The user understands the site's purpose on arrival.
+
+![landing](docs/readme/features/00-features-landing.png "landing")
+
+Minimised Navigation 
+
+The whole site uses a collapsable menu to save screen real estate on all resolutions.
+Menu options change depending on whether or not the user is logged in.
+
+![dynamic-menu-options-1](docs/readme/features/01-features-dynamic-menu-options-1.png "dynamic-menu-options-1")
+
+![dynamic-menu-options-2](docs/readme/features/02-features-dynamic-menu-options-2.png "dynamic-menu-options-2")
+
+Fixed Footer
+
+Links are always available at the bottom of the page for all viewscreen sizes.
+
+To assist user, link elements change style when hovering.
+
+![fixed-footer](docs/readme/features/03-features-fixed-footer.png "fixed-footer")
+
+CTA Buttons on Landing Page
+
+If user is logged in, an additional `Book Now` button becomes available.  This is a short cut to the *view booking* template.
+
+To enhance user experience, buttons change style when hovering.
+
+![cta-not-logged-in](docs/readme/features/04-features-cta-not-logged-in.png "cta-not-logged-in")
+
+![cta-logged-in](docs/readme/features/05-features-cta-logged-in.png "cta-logged-in")
+
+Services Page
+
+Contains a brief synopsis of the services offered, drawn from the backend Services table.
+
+A carousel element with 3 images has been included to make the site feel more dynamic.
+
+![services](docs/readme/features/06-features-services.png "services")
+
+Registration Page
+
+Standard allauth signup page adapted to the site's theme.
+
+![registration](docs/readme/features/07-features-registration.png "registration")
+
+Login Page
+
+Standard allauth signup page adapted to the site's theme.
+
+![login](docs/readme/features/08-features-login.png "login")
   
 
 ### Future adaptations
@@ -234,12 +290,12 @@ The developer ran into several issues during the development of the website, wit
 
 ### Frameworks, Libraries & Programs Used
 
-- [Balsamiq](https://balsamiq.com/)
-- [Lucidchart](https://lucid.co/)
-- [Adobe Color](https://color.adobe.com/)
-- [Eightshapes](https://contrast-grid.eightshapes.com)
-- [GitHub](https://github.com/)
-- [Heroku](https://id.heroku.com/)
+- [Balsamiq](https://balsamiq.com/) for wireframing
+- [Lucidchart](https://lucid.co/) to produce ERD's
+- [Adobe Color](https://color.adobe.com/) to research colour schemas.
+- [Eightshapes](https://contrast-grid.eightshapes.com) to review colour schema accessibility.
+- [GitHub](https://github.com/) for repo storage and Agile project management using kanban boards/issue tracking.
+- [Heroku](https://id.heroku.com/) for project deployment to the world wide web.
 - [Bootstrap](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/) 
 - [Django](https://www.djangoproject.com/)
@@ -253,7 +309,7 @@ The developer ran into several issues during the development of the website, wit
 ## Testing
 
 Refer to [TESTING.md](TESTING.md) for details on manual and automated testing.
-**DONT FORGET TO ADD HTML AND CSS VALIDATOR CHECKS!**
+**DONT FORGET TO ADD HTML AND CSS VALIDATOR CHECKS, LIGHTOUSE AND JSHINT use proper ci tool!**
 
 ### Deployment
 
@@ -275,7 +331,6 @@ It was also much easier to setup.
 - Facebook and LinkedIn icons by [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands)
 - Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
 - Landing page image from [Google Images](https://images.google.co.uk/)
-- [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide.  In the end I choose an alternative method but it could be useful for future development.
 - For dog breed [images](https://www.purina.co.nz/find-a-pet/dog-breeds) used in the carousel element.
 - Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
 
