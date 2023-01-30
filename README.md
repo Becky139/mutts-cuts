@@ -14,7 +14,7 @@
 3. [Features](#Features)
     1. [Design Features](#Design-Features)
     2. [Existing Features](#Existing-Features)
-    3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
+    3. [Future Adaptations](#Future-Adaptations)
 4. [Issues and Bugs](#Issues-and-Bugs)
 5. [Technologies Used](#Technologies-Used)
     1. [Main Languages Used](#Main-Languages-Used)
@@ -25,8 +25,7 @@
     1. [Deployment.md](DEPLOYMENT.md)
 8. [Credits](#Credits)
     1. [Content](#Content)
-    2. [Media](#Media)
-    3. [Code](#Code)
+    2. [People](#People)
 9. [Acknowledgements](#Acknowledgements)
 
 
@@ -212,7 +211,9 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 ### Existing Features
   
 
-### Features to Implement in the future
+### Future adaptations
+
+- Extending allauth [Vitor Freitas](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone) **STILL TO WORK OUT one to one to add address and phone number fields**
 
 
 [Back to top](#Mutts-Cuts)
@@ -245,7 +246,6 @@ The developer ran into several issues during the development of the website, wit
 - [PostgreSQL](https://www.postgresql.org/)
 - [Favicon-Icons8](https://icons8.com/)
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/)
-- Extending allauth [Vitor Freitas](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone) **STILL TO WORK OUT one to one to add address and phone number fields**
 
 
 [Back to top](#Mutts-Cuts)
