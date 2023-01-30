@@ -62,7 +62,7 @@ With the above in mind, let's help Mutts Cuts!
 
 Following an *Agile* paradigm, *user stories* will target customer needs and reduce embelishments on the part of the developer.  These non technical statements will aid with the incremental changes needed to build the application.
 
-Site user needs can broadly be split into 4 categories:
+Site user needs can broadly be split into 4 categories or epics:
 
 - navigation
 - account management
@@ -71,35 +71,50 @@ Site user needs can broadly be split into 4 categories:
 
 NAVIGATION
 
-- **As a** unregistered user, **I can** navigate to a page **so that** I can view the services offered by the business
-- **As a** unregistered user, **I can** follow a link **so that** I can view the Kennel's social media content
-- **As a** unregistered user, **I can** use a sidenav **so that** I can navigate the site on all views
-- *AS A* user, **I can** select a link **so that** I can register/ log in to my account
+- **As an** unregistered user, **I can** navigate to a page **so that** I can view the services offered by the business
+
+- **As an** unregistered user, **I can** follow a link **so that** I can view the Kennel's social media content
+
+- **As an** unregistered user, **I can** use a sidenav **so that** I can navigate the site on all views
+
+- **As a** user, **I can** select a link **so that** I can register/ log in to my account
 
 ACCOUNT MANAGEMENT
 
-- **As a** unregistered user, **I can** provide details **so that** I can create a unique account
+- **As an** unregistered user, **I can** provide details **so that** I can create a unique account
+
 - **As a** registered user, **I can** provide details **so that** I can login to my account
-- **As a** unregistered user, **I can** create a unique password **so that** I can protect my personal account
-- *AS A* logged in user, **I can** view a page **so that** I can see my personal account details by individual field 
-- *AS A* logged in user, **I can** click a button **so that** I can change my personal account details by individual field 
-- *AS A* logged in user, **I can** click a button **so that** I can delete my account
-- *AS A* logged in user, **I can** request an email **so that** I can reset my account password if I have forgotten it
+
+- **As an** unregistered user, **I can** create a unique password **so that** I can protect my personal account
+
+- *As a* logged in user, **I can** view a page **so that** I can see my personal account details by individual field 
+
+- *As a* logged in user, **I can** click a button **so that** I can change my personal account details by individual field 
+
+- *As a* logged in user, **I can** click a button **so that** I can delete my account
+
+- *As a* logged in user, **I can** request an email **so that** I can reset my account password if I have forgotten it
 
 BOOKINGS MANAGEMENT
 
-- *AS A* logged in user, **I can** provide booking details **so that** I can set up appointment
-- *AS A* logged in user, **I can** update details **so that** I can reschedule an appointment with the Kennel
-- *AS A* logged in user, **I can** cancel an appointment **so that** I can cancel an appointment with the Kennel
+- *As a* logged in user, **I can** provide booking details **so that** I can set up appointment
 
-- *AS A* logged in user, **I can** request an email **so that** be reminded of an appointment
-- *As a** employee, **I can** view a page **so that** I can see my daily bookings or the current day
+- *As a* logged in user, **I can** update details **so that** I can reschedule an appointment with the Mutts cuts
+
+- *As a* logged in user, **I can** cancel an appointment **so that** I can cancel an appointment with the Mutts cuts
+
+
+- *As a* logged in user, **I can** request an email **so that** be reminded of an appointment
+
+- *As an** employee, **I can** view a page **so that** I can see my daily bookings or the current day
 
 OTHER
 
-- *AS A* user, **I can** view the site on a small screen **so that** I can use it when traveling with a mobile device
+- *As a* user, **I can** view the site on a small screen **so that** I can use it when traveling with a mobile device
 
 - **As a** unregistered user, **I can** view the landing page **so that** I understand the site's purpose
+
+Use of [Agile](AGILE.md) can be found in a separate file.
 
 ### Design Thinking
 
