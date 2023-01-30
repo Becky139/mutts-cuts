@@ -114,7 +114,9 @@ OTHER
 
 - **As a** unregistered user, **I can** view the landing page **so that** I understand the site's purpose
 
-Use of [Agile](AGILE.md) can be found in a separate file.
+[Agile](AGILE.md) use has been documented in a separate file.
+
+It became something of learning aid/development tracker for this project. 
 
 ### Design Thinking
 
@@ -140,8 +142,10 @@ As per assessment criteria, this project must utilise CRUD functionality.  This 
 The above exercise indicates that overall importance/feasability scores were similar.  Therefore the project should be deliverable.
 
 ## Colour Schema
-The colour schema was selected from [Adobe Color](https://color.adobe.com/search?q=dog).
+The colour schema was selected from [Adobe Color](https://color.adobe.com/search?q=dog) and the accessibility was checked usin the [contrast grid](https://contrast-grid.eightshapes.com) tool by eightshapes.
+
 The developed site should appear bright to contrast with the negative space.
+
 In keeping with the dog theme, colours are based of the *Mystery Machine* as seen in [Scooby-Doo](https://en.wikipedia.org/wiki/Scooby-Doo).
 
 ![colour-schema](docs/readme/colour-schema.png "colour schema")
@@ -174,17 +178,23 @@ The information above was then organized in a hierarchical tree structure, a sit
 #### Skeleton
 Wireframes were made to showcase the appearance of the site pages while keeping a positive user experience in mind. The wireframes were created using a desktop version of [Balsamiq](https://balsamiq.com/).
 
-
 <details>
 <summary>Balsamiq Wireframes</summary>
     
 ![Site Wireframes](docs/readme/wireframes/00-index-page.png)
+
 ![Site Wireframes](docs/readme/wireframes/01-our-services.png)
+
 ![Site Wireframes](docs/readme/wireframes/02-join-us.png)
+
 ![Site Wireframes](docs/readme/wireframes/03-my-account.png)
+
 ![Site Wireframes](docs/readme/wireframes/04-book-now.png)
+
 ![Site Wireframes](docs/readme/wireframes/05-my-appointments.png)
+
 ![Site Wireframes](docs/readme/wireframes/06-daily-calender.png)
+
 </details>   
 
 
@@ -224,6 +234,7 @@ The developer ran into several issues during the development of the website, wit
 - [Balsamiq](https://balsamiq.com/)
 - [Lucidchart](https://lucid.co/)
 - [Adobe Color](https://color.adobe.com/)
+- [Eightshapes](https://contrast-grid.eightshapes.com)
 - [GitHub](https://github.com/)
 - [Heroku](https://id.heroku.com/)
 - [Bootstrap](https://getbootstrap.com/)
