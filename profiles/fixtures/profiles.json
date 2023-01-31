@@ -7,14 +7,5 @@
             "phone":"012345654321",
             "address":"17 Kennel Way"
         }
-    },
-    {
-        "model":"profiles.profile",
-        "pk":4,
-        "fields":{
-            "user":4,
-            "phone":"",
-            "address":""
-        }
     }
 ]
