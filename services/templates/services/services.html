@@ -10,12 +10,8 @@
                 <h1>Our Services</h1>
             </div>
             <div class="col-md-12">
-                Is your pooch having a <em><strong>ruff</strong></em> day?
-            </div>
-            <div class="col-md-12">
+                Is your pooch having a <em><strong>ruff</strong></em> day?  
                 Are you being <em><strong>hounded</strong></em> for a treat?
-            </div>
-            <div class="col-md-12">
                 A trip to <em><strong>Mutts Cuts</strong></em> will be <em><strong>paws-itively</strong></em>
                 satisfying!
             </div>
@@ -54,20 +50,6 @@
                 </div>
             </div>
         </section>
-        <!-- services summary -->
-        <section id="service-types" class="row py-2 mt-2">
-            {% for service in services %}
-            <div class="d-flex justify-content-center col p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-paw"></i></h5>
-                        <h6 class="card-subtitle mb-2">{{ service.service_name }} Service</h6>
-                        <p class="card-text">{{ service.service_desc }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </section>
         <!-- nav options based on authentication status -->
         <div class="row my-4">
             {% if user.is_authenticated %}
@@ -83,6 +65,21 @@
                     </div>
                 </div>
         {% endif %}
+        <!-- services summary -->
+        <section id="service-types" class="row py-2 mt-2">
+            {% for service in services %}
+            <div class="d-flex justify-content-center col p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-paw"></i></h5>
+                        <h6 class="card-subtitle mb-2">{{ service.service_name }} Service</h6>
+                        <p class="card-text">{{ service.service_desc }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+        
     </div>
 </main>
 {% endblock %}

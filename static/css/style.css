@@ -27,6 +27,7 @@
 /* html */
 html {
     scroll-behavior: smooth;
+    position: relative;
 }
 
 /* body */
@@ -45,8 +46,8 @@ body {
 /* text, header and card styling */
 
 .card {
-    width: 18rem;
-    height: 220px;
+    width: 15rem;
+    height: 190px;
     border: 3px solid black;
 }
 
@@ -60,7 +61,7 @@ em>strong,
 .card-subtitle {
     color: rgba(var(--theme-five), 1);
     font-family: 'Square Peg', cursive;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #service-types {
@@ -69,8 +70,9 @@ em>strong,
 
 /* footer */
 footer {
-    height: 100px;
     text-align: center;
+    width: 100%;
+    height: 40px;
     background-color: white;
 }
 
@@ -78,11 +80,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
     border-radius: 10px;
+    font-size: large;
+    padding: 10px;
 }
 
 .footer-content a {
-    color: rgba(var(--theme-one), 1)
+    color: rgba(var(--theme-one), 1);
+    padding: 10px;
 }
 
 .footer-content a:hover {
@@ -185,7 +191,7 @@ footer {
 
 /* carousel */
 .carousel-item {
-    height: 635px;
+    height: 500px;
     overflow: hidden;
 }
 
