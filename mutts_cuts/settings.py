@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django.contrib.staticfiles',
+    'django_static_jquery_ui',
 
     # Custom apps
     'home',
