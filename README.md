@@ -271,8 +271,8 @@ This shows the user all existing bookings.  It is intended that that they use th
 
 All accounts can:
 - view a page personalised with their username
-- view booking from the current date to one year in the future
-- filter the table using a jquery support datepicker. This has been setup to allow only current date to one year in the future.
+- view bookings from the current date to one year in the future
+- filter the table using a jquery support datepicker. This has been setup to allow selections from current date to one year in the future.
 - `Show all` button removes filtering and restores table to default.
 - create a booking by selecting `Book Now`
 - the table itself utilizes a hover effect for a whole row to emphasis the record the user is actively viewing/selecting.
@@ -309,7 +309,7 @@ This serves as a defensive programming feature for the user asking if they reall
 
 The title and message body are personalised and the buttons have the same hover effects in keeping with the rest of the site.
 
-![](docs/readme/features/15-features-.png "")
+![](docs/readme/features/15-features-cancel-booking-modal.PNG.png "cancel-booking-modal")
   
 
 ### Future adaptations
