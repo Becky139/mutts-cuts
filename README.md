@@ -217,16 +217,16 @@ Landing Page
 
 The user understands the site's purpose on arrival.
 
-![landing](docs/readme/features/00-features-landing.png "landing")
+![landing](docs/readme/features/00-features-landing.PNG "landing")
 
 Minimised Navigation 
 
 The whole site uses a collapsable menu to save screen real estate on all resolutions.
 Menu options change depending on whether or not the user is logged in.
 
-![dynamic-menu-options-1](docs/readme/features/01-features-dynamic-menu-options-1.png "dynamic-menu-options-1")
+![dynamic-menu-options-1](docs/readme/features/01-features-dynamic-menu-options-1.PNG "dynamic-menu-options-1")
 
-![dynamic-menu-options-2](docs/readme/features/02-features-dynamic-menu-options-2.png "dynamic-menu-options-2")
+![dynamic-menu-options-2](docs/readme/features/02-features-dynamic-menu-options-2.PNG "dynamic-menu-options-2")
 
 Fixed Footer
 
@@ -234,7 +234,7 @@ Links are always available at the bottom of the page for all viewscreen sizes.
 
 To assist user, link elements change style when hovering.
 
-![fixed-footer](docs/readme/features/03-features-fixed-footer.png "fixed-footer")
+![fixed-footer](docs/readme/features/03-features-fixed-footer.PNG "fixed-footer")
 
 CTA Buttons on Landing Page
 
@@ -242,9 +242,9 @@ If user is logged in, an additional `Book Now` button becomes available.  This i
 
 To enhance user experience, buttons change style when hovering.
 
-![cta-not-logged-in](docs/readme/features/04-features-cta-not-logged-in.png "cta-not-logged-in")
+![cta-not-logged-in](docs/readme/features/04-features-cta-not-logged-in.PNG "cta-not-logged-in")
 
-![cta-logged-in](docs/readme/features/05-features-cta-logged-in.png "cta-logged-in")
+![cta-logged-in](docs/readme/features/05-features-cta-logged-in.PNG "cta-logged-in")
 
 Services Page
 
@@ -252,19 +252,19 @@ Contains a brief synopsis of the services offered, drawn from the backend Servic
 
 A carousel element with 3 images has been included to make the site feel more dynamic.
 
-![services](docs/readme/features/06-features-services.png "services")
+![services](docs/readme/features/06-features-services.PNG "services")
 
 Registration Page
 
 Standard allauth signup page adapted to the site's theme.
 
-![registration](docs/readme/features/07-features-registration.png "registration")
+![registration](docs/readme/features/07-features-registration.PNG "registration")
 
 Login Page
 
 Standard allauth signup page adapted to the site's theme.
 
-![login](docs/readme/features/08-features-login.png "login")
+![login](docs/readme/features/08-features-login.PNG "login")
   
 
 ### Future adaptations
