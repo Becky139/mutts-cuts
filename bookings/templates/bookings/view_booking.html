@@ -95,19 +95,22 @@
                         <!--if superuser or staff user show all booking fields -->
                         {% if request.user.is_superuser or request.user.is_staff %}
                         <td>{{ booking.user }}</td>
-                        {% else %}
-                        <!-- if standard user is authenticated show their username but anonymize other usernames names -->
-                        {% if booking.user == request.user %}
-                        <td>{{ booking.user }}</td>
-                        {% else %}
-                        <td>*****</td>
-                        {% endif %}
-                        {% endif %}
-                        <!-- always show these fields -->
                         <td>{{ booking.pet_name }}</td>
                         <td>{{ booking.date }}</td>
                         <td>{{ booking.start_time }}</td>
                         <td>{{ booking.service_type }}</td>
+                        {% else %}
+                        <!-- if standard user is authenticated show their username but anonymize other usernames names -->
+                        {% if booking.user == request.user %}
+                        <td>{{ booking.user }}</td>
+                        <td>{{ booking.pet_name }}</td>
+                        <td>{{ booking.date }}</td>
+                        <td>{{ booking.start_time }}</td>
+                        <td>{{ booking.service_type }}</td>
+                        {% else %}
+                        <td>*****</td>
+                        {% endif %}
+                        {% endif %}
                         <!--apply an edit & cancel link to each row if superuser staff user the user.
                         or if current standard user created the record-->
                         {% if request.user.is_superuser or request.user.is_staff or booking.user == request.user %}
