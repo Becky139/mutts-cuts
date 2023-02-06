@@ -320,6 +320,10 @@ The title and message body are personalised and the buttons have the same hover 
 
 ![cancel-booking-modal](docs/readme/features/15-features-cancel-booking-modal.PNG "cancel-booking-modal")
 
+#### Help using our site
+
+![help-modal](docs/readme/features/20-features-help-modal.PNG "help-modal")
+
 Customised alerts
 The Django framework has been used to apply messages throughout the site to give the user useful feedback.
 To do this a `messages.html` template was included in the base.html,

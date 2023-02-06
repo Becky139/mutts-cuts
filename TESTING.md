@@ -1,12 +1,12 @@
 # Testing
 
-A variety of manual and automated tests were performed throughout the project.
+A variety of exploratory tests were performed throughout the project.
 
 ## Manual Testing
 
-#1. Getting the live deployed site working. This is well documented in the latter sections of [DEPLOYMENT.md](DEPLOYMENT.md)
+**1. Getting the live deployed site working. This is well documented in the latter sections of [DEPLOYMENT.md](DEPLOYMENT.md)
 
-#2. Checking the deployed site opens on the homepage.
+**2. Checking the deployed site opens on the homepage.
 - create a function based view in home
 - create a path in the url file in the home app
 - reference the home app url in the main project url file
@@ -30,7 +30,7 @@ path('', include("home.urls")),
 
 ![live-deployment-homepage](docs/readme/testing/01-live-deployment-homepage.png "live-deployment-homepage")
 
-#3. Check own `css` and `js` files link up to `base.html` via `head.html` and `scripts.html`. These are component files that get inserted to `base.html` using Django Templates.
+**3. Check own `css` and `js` files link up to `base.html` via `head.html` and `scripts.html`. These are component files that get inserted to `base.html` using Django Templates.
 
 
 *static/css/style.css*
@@ -70,7 +70,7 @@ The test is successful as the `body` has a greenyellow background colour and `Ho
 
 ![check-css-js-links-to-base-template](docs/readme/testing/02-check-css-js-links-to-base-template.png "check-css-js-links-to-base-template")
 
-**#4. Getting the favicon to display on the browser tab**
+**4. Getting the favicon to display on the browser tab**
 
 In the plate above you'll also notice a favicon present.  The test was successful as you can see it.
 
@@ -81,7 +81,7 @@ In the plate above you'll also notice a favicon present.  The test was successfu
 ```
 
 **TODO** -= review issue #25 in GitHub project `Week-2-create-basic-front-end`
-**#5. Checking static folder is working on deployed site**
+**5. Checking static folder is working on deployed site**
 
 Any images stored in `static/img/` folder should display when deployed.  Remember to delete the DISABLE_COLLECTSTATIC config var in Heroku Settings by clicking on the X.
 
@@ -96,13 +96,13 @@ This prompted a different approach to handling static files by installing the [`
 Success. The hero image from the static folder now works on the deployed site resolving [issue #25]
 
 
-**#6. Ensure social media links in footer open in a new browser tab**
+**6. Ensure social media links in footer open in a new browser tab**
 
 These are generic for the project.  No social content exists as the business does not exist.
 
 ![social-files-links-open-in-new-tab](docs/readme/testing/05-social-media-links-open-in-new-tab.PNG "social-files-links-open-in-new-tab")
 
-**#7. Check index.html template is using base.html template**
+**7. Check index.html template is using base.html template**
 
 Extend `base.html` content to any view by using `{% extends 'base.html' %}` at the top of each file.  Best to test this on the site landing page as this is the first one that is created.
 
@@ -133,10 +133,10 @@ The h1 heading containing text *Homepage* only exists in `index.html`.
 
 ![check-base-injecting-to-index-view.png](docs/readme/testing/06-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
 
-**#8** Correct `settings.py` and `.env` file setup.
+**8 Correct `settings.py` and `.env` file setup.
 After resolving [issue #28](https://github.com/Becky139/mutts-cuts/issues/28), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up [environment variables](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) and referencing them corrrectly.
 
-**#9** Check `allauth` working with nav links.
+**9 Check `allauth` working with nav links.
 Allauth did the hard work for signup/login/logout.  Just had to configure `navbar.html` with Django templates to check authentication. 
 A test account was created to check it worked.
 ``` html
@@ -176,7 +176,7 @@ A test account was created to check it worked.
 
 ![reg-users-site-admin-page](docs/readme/testing/11-reg-users-site-admin-page.png "reg-users-site-admin-page")
 
-**#10** Check 1st model has successfully migrated. (same checks to be applied to all subsequent models after creation or update)
+**10 Check 1st model has successfully migrated. (same checks to be applied to all subsequent models after creation or update)
 
 In CLI, type `python3 manage.py makemigrations --dry-run` to view unexecuted effect. This tells Django to create instructions that build a new database table in the `home` app.
 
@@ -234,11 +234,11 @@ To fix this oversite I deleted the postgres table from the CLI by typing:
 
 Thanks to [Tutorials Point](https://www.tutorialspoint.com/python_data_access/python_postgresql_drop_table.htm) for the guidance.
 
-**#11** Extend allauth signup to include request for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User)
+**11 Extend allauth signup to include request for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User)
 
 Still to resolve issue [#28](https://github.com/Becky139/mutts-cuts/issues/53) 
 
-**#12** Booking Model update
+**12 Booking Model update
 
 As mentioned in the AGILE file the original `booking` model was too simple.  Appointments needed to:
 
@@ -263,15 +263,15 @@ class Booking(models.Model):
 
 Be subclassing a list within the booking model I was able to use a time format for the appointments though this doesn't allow the `timedelta` method to be used to calcuate duration. I'll be wary of this approach in future projects.
 
-**#13** Registration Errno 111
+**13 Registration Errno 111
 I encountered this late into the project.  A new account was registered but an error was thrown as an email couldn't be sent.
 After reviewing Django [Allauth docs](https://django-allauth.readthedocs.io/en/latest/configuration.html), the solution was to disable `email verification`.
 
-![sign-up](docs/readme/testing/15-sign-up.png "sign-up")
+![sign-up](docs/readme/testing/15-sign-up.PNG "sign-up")
 
-1![errno111](docs/readme/testing/16-errno111.png "errno111")
+1![errno111](docs/readme/testing/16-errno111.PNG "errno111")
 
-![django-admin-check](docs/readme/testing/17-django-admin-check.png "django-admin-check")
+![django-admin-check](docs/readme/testing/17-django-admin-check.PNG "django-admin-check")
 
 ``` python
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -374,7 +374,11 @@ In one example, I was unable to create a booking after trying to update the view
 
 Time to attempt at least a few basic tests for the site.
 
-![](docs/readme/testing/15-.png "")
+After writing a few tests it is useful to install the `coverage` module.  This shows what percentage of the code has been tested.
+
+Type `pip3 install coverage`.
+
+To see how much has be tested in the booking app for instance, type `coverage run --source=bookings manage.py test` into the cli.
 
 ## Validation
 
@@ -388,7 +392,7 @@ Time to attempt at least a few basic tests for the site.
 ### CSS Validation
 [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
-**377** warnings, **6** errors all related to [fontawesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css) third party.
+**377** warnings, **6** errors all related to [font awesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css) third party.
 
 ![css-jigsaw](docs/readme/testing/linter-checks/01-css-jigsaw.PNG "css-jigsaw")
 
@@ -435,6 +439,12 @@ Tool was useful for removing lines > 79 characters, particulary when working wit
 
 1. HTML5 date input does not disable for weekends.  A Javascript solution is needed to prevent an appointment being created/edited for a Saturday or Sunday when the business is closed.
 
-2. Close button on messages at top of page doesn't work.  Cannot dismiss the message element.
+2. Issue #28 - Extend allauth signup to include request for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User.  This solution is a prerequsite to #8, #9, #10, #11
+
+3. User Story - #8 As a logged in user I can view a page so that I can see my personal account details by individual field 
+4. User story - #9 As a logged in user I can click a button so that I can change my personal account details by individual field
+5. User Story - #10 As a logged in user I can click a button so that I can delete my account
+6. User Story - #11 As a logged in user I can request an email so that I can reset my account password if I have forgotten it
+7. User Story - #15 As a logged in user I can request an email so that be reminded of an appointment.  COULD HAVE item.
 
 Return to[README.md](README.md)
