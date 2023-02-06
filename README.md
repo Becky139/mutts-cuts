@@ -389,6 +389,11 @@ The developer ran into several issues during the development of the website, wit
 - [PostgreSQL](https://www.postgresql.org/)
 - [Favicon-Icons8](https://icons8.com/)
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+- [W3C Markup Validator](https://validator.w3.org/) HTML linter
+- [Jigsaw](https://jigsaw.w3.org/css-validator/) CSS linter
+- [JSHint](https://jshint.com/) JS linter
+- [PEP8](https://www.pythonchecker.com/) Python linter
 
 
 [Back to top](#Mutts-Cuts)
@@ -396,7 +401,10 @@ The developer ran into several issues during the development of the website, wit
 ## Testing
 
 Refer to [TESTING.md](TESTING.md) for details on manual and automated testing.
-**DONT FORGET TO ADD HTML AND CSS VALIDATOR CHECKS, LIGHTOUSE AND JSHINT use proper ci tool!**
+- manual testing
+- automated testing
+- Lighthouse site performance checks
+- linter checks on html, css, js and python code
 
 ### Deployment
 
