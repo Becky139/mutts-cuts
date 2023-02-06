@@ -366,7 +366,7 @@ Time to attempt at least a few basic tests for the site.
 ### HTML Validation
 [W3C Markup Validator](https://validator.w3.org/)
 
-**2** warnings, **0** errors.
+**1** warnings, **0** errors.
 
 ![html-w3cvalidator](docs/readme/testing/linter-checks/00-html-w3cvalidator.PNG "html-w3cvalidator")
 
