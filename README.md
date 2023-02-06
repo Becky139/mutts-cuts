@@ -319,6 +319,28 @@ This serves as a defensive programming feature for the user asking if they reall
 The title and message body are personalised and the buttons have the same hover effects in keeping with the rest of the site.
 
 ![cancel-booking-modal](docs/readme/features/15-features-cancel-booking-modal.PNG.png "cancel-booking-modal")
+
+Customised alerts
+The Django framework has been used to apply messages throughout the site to give the user useful feedback.
+To do this a `messages.html` template was included in the base.html,
+`Alerts` can be seen at the top of the page for:
+
+- logging in
+
+![sign-in-msg](docs/readme/features/16-features-sign-in-msg.PNG "sign-in-msg")
+
+- logging out
+
+![sign-out-msg](docs/readme/features/17-features-sign-out-msg.PNG "sign-out-msg")
+
+- creating/editing a valid booking
+
+![confirm-booking-msg](docs/readme/features/18-features-confirm-booking-msg.PNG "confirm-booking-msg")
+
+- preventing a booking clash (with time formatting)
+
+![prevent-booking-clash-msg](docs/readme/features/19-features-prevent-booking-clash-msg.PNG "prevent-booking-clash-msg")
+prevent-booking-clash
   
 
 ### Future adaptations
@@ -423,6 +445,7 @@ MFA/2FA enabled?
 - Landing page image from [Google Images](https://images.google.co.uk/)
 - For dog breed [images](https://www.purina.co.nz/find-a-pet/dog-breeds) used in the carousel element.
 - Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
+- [Will McCutchen](https://strftime.org/) for his useful string from time cheatsheet.
 
 
 ### People
@@ -436,6 +459,8 @@ CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
 - For his useful Bootstrap revision sheet, [Alexander Rechsteiner](https://hackerthemes.com/bootstrap-cheatsheet/)
 - [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide.  In the end I choose an alternative method but it could be useful for future development.
 - Fellow students, David Bowers and Helena Johansson for their moral support.  They kept me going during periods of self doubt.
+- [Jaysha](https://ordinarycoders.com/blog/article/django-messages-framework) at ordinarycoders for her breakdown of django messaging with Bootstrap.
+- [W3schools](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) for working with bootstrap.
 
 [Back to top](#Mutts-Cuts)
 
