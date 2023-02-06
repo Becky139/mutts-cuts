@@ -352,25 +352,25 @@ Be subclassing a list within the booking model I was able to use a time format f
 
 #### services/views.py
 
-![services-python-pep-services-views](docs/readme/testing/linter-checks/03-python-pep8-services-views.png "services-python-pep8-services-views")
+![services-python-pep-services-views](docs/readme/testing/linter-checks/03-python-pep8-services-views.PNG "services-python-pep8-services-views")
 
 #### views/views.py
 
-![bookings-python-pep-bookings-views](docs/readme/testing/linter-checks/04-python-pep8-bookings-views.png "bookings-python-pep8-bookings-views")
+![bookings-python-pep-bookings-views](docs/readme/testing/linter-checks/04-python-pep8-bookings-views.PNG "bookings-python-pep8-bookings-views")
 
 ### Lighthouse
 
 #### Home page
 
-![lighthouse-index](docs/readme/testing/linter-checks/05-lighthouse-index.png "lighthouse-index")
+![lighthouse-index](docs/readme/testing/linter-checks/05-lighthouse-index.PNG "lighthouse-index")
 
 #### Services page
 
-![lighthouse-services](docs/readme/testing/linter-checks/06-lighthouse-services.png "lighthouse-services")
+![lighthouse-services](docs/readme/testing/linter-checks/06-lighthouse-services.PNG "lighthouse-services")
 
 #### View booking page
 
-![lighthouse-view-bookings](docs/readme/testing/linter-checks/07-lighthouse-view-bookings.png "lighthouse-view-bookings")
+![lighthouse-view-bookings](docs/readme/testing/linter-checks/07-lighthouse-view-bookings.PNG "lighthouse-view-bookings")
 
 ## Unresolved Issues
 
