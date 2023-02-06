@@ -318,7 +318,7 @@ This serves as a defensive programming feature for the user asking if they reall
 
 The title and message body are personalised and the buttons have the same hover effects in keeping with the rest of the site.
 
-![cancel-booking-modal](docs/readme/features/15-features-cancel-booking-modal.PNG.png "cancel-booking-modal")
+![cancel-booking-modal](docs/readme/features/15-features-cancel-booking-modal.PNG "cancel-booking-modal")
 
 Customised alerts
 The Django framework has been used to apply messages throughout the site to give the user useful feedback.
@@ -354,9 +354,9 @@ A good source to aid with this expansion is by [Vitor Freitas](https://simpleisb
 
 It would be preferable to give a user their own page to view appointments.
 
-Also why not provide buttons to work in conjucction with a datepicker.  The latter provides a date, each button can represent an appointment time.  These values can be queried against existing Book table entries and let the user know if the appointent is available.
+Also why not provide buttons to work in conjuction with a datepicker?  The latter provides a date, each buttons can represent an appointment time.  These values can be queried against existing Book table entries and let the user know if the appointent is available.  This approach will require some Javascript to manipulate the DOM.
 
-The next logical step with this approach is to change the colour of these buttons based upon that time being available.  For example, taken appointments are greyed out completely or hidden.
+The next logical step with this approach is to change the colour of these buttons based upon that time being available.  Taken appointments may be greyed out completely or hidden.
 
 
 [Back to top](#Mutts-Cuts)

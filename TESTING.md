@@ -330,6 +330,55 @@ Be subclassing a list within the booking model I was able to use a time format f
 
 ![](docs/readme/testing/15-.png "")
 
+## Validation
+
+### HTML Validation
+[W3C Markup Validator](https://validator.w3.org/)
+
+![html-w3cvalidator](docs/readme/testing/linter-checks/00-html-w3cvalidator.png "html-w3cvalidator")
+
+### CSS Validation
+[Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+![css-jigsaw](docs/readme/testing/linter-checks/01-css-jigsaw.png "css-jigsaw")
+
+### JS Validation
+[JSHint](https://jshint.com/)
+
+![js-jslint](docs/readme/testing/linter-checks/02-js-jslint.png "js-jslint")
+
+### Python Validation
+[PEP8](http://pep8online.com/)
+
+#### services/views.py
+
+![services-python-pep-services-views](docs/readme/testing/linter-checks/03-python-pep8-services-views.png "services-python-pep8-services-views")
+
+#### views/views.py
+
+![bookings-python-pep-bookings-views](docs/readme/testing/linter-checks/04-python-pep8-bookings-views.png "bookings-python-pep8-bookings-views")
+
+### Lighthouse
+
+#### Home page
+
+![lighthouse-index](docs/readme/testing/linter-checks/05-lighthouse-index.png "lighthouse-index")
+
+#### Services page
+
+![lighthouse-services](docs/readme/testing/linter-checks/06-lighthouse-services.png "lighthouse-services")
+
+#### View booking page
+
+![lighthouse-view-bookings](docs/readme/testing/linter-checks/07-lighthouse-view-bookings.png "lighthouse-view-bookings")
+
+## Unresolved Issues
+
+1. HTML5 date input does not disable for weekends.  A Javascript solution is needed to prevent an appointment being created/edited for a Saturday or Sunday when the business is closed.
+
+2. Close button on messages at top of page doesn't work.  Cannot dismiss the message element.
+
+
 ## Automated Testing
 A major drawback of exploratory testing was having to repeat it when new code was written. The site is small so the task is manageable but unit testing is the next logical step.
 
