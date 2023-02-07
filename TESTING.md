@@ -435,6 +435,10 @@ Tool was useful for removing lines > 79 characters, particulary when working wit
 
 ![lighthouse-view-bookings](docs/readme/testing/linter-checks/07-lighthouse-view-bookings.PNG "lighthouse-view-bookings")
 
+## Other browsers
+
+No discernible issues using other popular browsers including [firefox](https://www.mozilla.org/en-GB/firefox/new/) and [MS Edge](https://www.microsoft.com/en-us/edge).
+
 ## Unresolved Issues
 
 1. HTML5 date input does not disable for weekends.  A Javascript solution is needed to prevent an appointment being created/edited for a Saturday or Sunday when the business is closed.
