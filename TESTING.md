@@ -445,10 +445,10 @@ No discernible issues using other popular browsers including [firefox](https://w
 
 2. Issue #28 - Extend allauth signup to include request for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User.  This solution is a prerequsite to #8, #9, #10, #11
 
-3. User Story - #8 As a logged in user I can view a page so that I can see my personal account details by individual field 
-4. User story - #9 As a logged in user I can click a button so that I can change my personal account details by individual field
-5. User Story - #10 As a logged in user I can click a button so that I can delete my account
-6. User Story - #11 As a logged in user I can request an email so that I can reset my account password if I have forgotten it
+3. User Story - #8 As a logged in user I can view a page so that I can see my personal account details by individual field. 
+4. User story - #9 As a logged in user I can click a button so that I can change my personal account details by individual field.
+5. User Story - #10 As a logged in user I can click a button so that I can delete my account.
+6. User Story - #11 As a logged in user I can request an email so that I can reset my account password if I have forgotten it.
 7. User Story - #15 As a logged in user I can request an email so that be reminded of an appointment.  COULD HAVE item.
 
 Return to[README.md](README.md)
