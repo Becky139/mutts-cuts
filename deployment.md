@@ -73,7 +73,7 @@ If Gitpod has a glitch and doesn't provide this popup, copy the url in the brows
 
 ![14](docs/readme/local_deployment/14-local-deploy-success.png)
 
-## Set up project to use a relational database (PostgreSQL) and Cloudinary (for persistent file storage)
+## Set up project to use a relational database (PostgreSQL)
 
 Assuming the Heroku cli has been [installed](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), a new Heroku project can be created using the terminal.
 
@@ -111,7 +111,6 @@ With the deployed project working, it is time to:
 
 - create and wire up a *PostgreSQL* database
 - adapt the env settings/config vars
-- setup *Cloudinary* for persistent file storage
 
 
 ### Postgres
@@ -140,7 +139,7 @@ os.environ["DATABASE_URL"] = "postgres://<PASTED KEY FROM HEROKU>"
 os.environ["SECRET_KEY"] = "SecretKeyOfYourChoice"
 ```
 
-Add the SECRET key to Config vars in Heroku.
+Add the SECRET key to Config vars in Heroku. (for security reason the below screenshot is defunct)
 
 ![10](docs/readme/heroku_deployment/10-add-database-and-secretkey-configvars.png "10")
 
@@ -163,20 +162,24 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 Now change the DATABASES_URL setting as follows:
 
 ```python
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-DATABASES_URL = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+if os.environ.get("DEVELOPMENT"):
+    # Heroku database
+    print("database = PostgreSQL via Heroku")
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
+        }
+else:
+    # Testing database
+    print("database = db.sqlite3")
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 ```
 
-In plain English, the above is a dictionary telling us the default database is the postgres database we referenced in `env.py`.  The dj_database utility is passing the url directly using the parse method.
+The above is a dictionary telling us the default database is the postgres database we referenced in `env.py`.  The dj_database utility is passing the url directly using the parse method.
 
 To confirm the Heroku database is acting as the backend, perform migrations again by typing *python3 manage.py migrate*.
 
@@ -186,50 +189,6 @@ Selecting *Heroku Postgres* from *Resources* in Heroku will open a new browser t
 
 ![12](docs/readme/heroku_deployment/12-heroku-postgres-backend-confirm.png "12")
 
-### Cloudinary
-
-Create a [Cloudinary](https://cloudinary.com/) account.
-
-On the cloudinary dashboard, copy the API environment variable.
-
-![13](docs/readme/heroku_deployment/13-cloudinary-account-copy-env-var.png "13")
-
-At the bottom of `env.py` type the following:
-
-```python
-os.environ["CLOUDINARY_URL"] = "cloudinary://blahblahblah"
-```
-
-were *blahblahblah* equals the cloudinary key value.
-
-Return to Heroku, Settings, Config Vars and add the key and value as well as the DISABLE_COLLECTSTATIC key and value to get the application working as currently there are now static files.
-
-![14](docs/readme/heroku_deployment/14-cloudinary-config-var.png "14")
-
-Add *cloudinary_storage* and *cloudinary* libraries to INSTALLED _APPS in `settings.py` to reflect below.
-
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary'
-    'home',
-]
-```
-
-To instruct Django to use Cloudinary to store media (images) and static files (css/javascript) add the following in `settings.py` below `STATIC_URL = '/static/'` (ln #132)
-
-```python
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 ```
 
 To tell Django were to store templates add the following in `settngs.py` below `BASE_DIR = Path(__file__).resolve().parent.parent` (ln #20)
@@ -249,13 +208,23 @@ TEMPLATES = [
 ```
 Create 3 new top level directories for static, media and templates folders.
 In the main directory, type the following into the command line: (mkdir = make directory <name>)
+
 ![15](docs/readme/heroku_deployment/15-create-static-media-templates-directories.png "15")
+
 All changes that are committed and pushed from Gitpod IDE are stored on the Github repository and not the deployed Heroku side.  Is is possisble to push changes seperately to each platorm but it is easier to link GitHub to Heroku and have the latter automatically update from changes pushed to the repository.
 To do so, in Heroku go to *Deploy*, select the *Connect to GitHub* button in the *Deployment Method* section.
 Then type the GitHub repository name and *Connect*.
+
 ![16](docs/readme/heroku_deployment/16-connect-github-to-heroku.png "16")
+
 In the *Manual deploy* section select the *Deploy Branch* button.
+
 ![17](docs/readme/heroku_deployment/17-connect-github-to-heroku-deploy-branch.png "17")
+
 Allow the deployed app to build then select *Open app* once complete.  You should see the same success screen as with the local deployment success except this time is has a different url.
+
 ![18](docs/readme/heroku_deployment/18-heroku-deploy-success.png "18")
+
+These steps are current to the time of deployment and may change in the future.
+
 Return to [README.md](README.md)
