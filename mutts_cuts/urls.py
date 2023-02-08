@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import handler404, handler 500
+from .views import handler404, handler500
 
 
 urlpatterns = [
@@ -11,5 +11,5 @@ urlpatterns = [
     path('bookings/', include('bookings.urls')),
 ]
 
-handler404 = 'main.views.handler404'
-handler500 = 'main.views.handler500'
+handler404 = 'mutts_cuts.views.handler404'
+handler500 = 'mutts_cuts.views.handler500'
