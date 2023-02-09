@@ -364,7 +364,66 @@ The state of these buttons may be changed by adding a class to give a muted styl
 ## Issues and Bugs
 The developer ran into several issues during the development of the website, with the noteworthy ones listed below, along with solutions or ideas to implement in the future.
 
+Bug 1
 
+Testing Issue Checking static folder is working on deployed site #28
+
+this is in Sprint 2 of my projects. Any images stored in static/img/ folder should display when deployed. Remember to delete the DISABLE_COLLECTSTATIC config var in Heroku Settings by clicking on the X.
+When I deleted this config var and tried to redeploy, the build log stated python manage.py collectstatic --noinput.
+This prompted a different approach to handling static files by installing the dotenv python package. From there i updated the requirements.txt file and settings.py and env.py files in the project before pushing them to GitHub again.
+https://github.com/Becky139/mutts-cuts/issues/28
+
+Bug 2
+
+Carousel images change dimensions when transitioning #52
+
+Carousel image resizes when transitioning despite being of similar/size dimension to other images.
+It produces an unwanted jumping effect.
+https://github.com/Becky139/mutts-cuts/issues/52
+
+Bug 3
+
+Write view logic in booking view to prevent created and updated bookings from clashing an existing booking #56
+
+This can be found in Sprint 8. The answer to this conundrum lay within Django documentation.
+Querysets. It's abstracted so there is no need to open the database connection, perform actions, or close the connection.
+Applied logic within the bookings/views.py function.
+Essentially, if a record exists for a specific date AND specific time, the program can branch to tell the user their attempt to create or edit an appointment to the same time cannot be done. The business can only perform one appointment at a time as there is 1 member of staff.
+(https://github.com/Becky139/mutts-cuts/issues/56)
+
+Bug 4
+
+Content cut off when viewing on a small mobile device #58
+
+Issues found on two pages Services and View Bookings This can be found in Sprint 8.
+In MDN docs i found the following to test
+1. Remove the following properties from the viewport in the head.html file
+2. user-scalable=no, maximum-scale=1.0, minimum-scale=1.0
+But then found the solution below to fix the issue
+Services page x-overflow solved. Container fluid was applied to multiple sections and a number of stray divs. Resolved.
+Table in view bookings cannot be viewed properly below 768px. Research suggests if was a poor choice to use table elements with so many fields when responsive design was a feature. This can be resolved by using a combination of display: block and flexbox to stack td elements. This could compact information to less than 500px and still be effective.
+https://github.com/Becky139/mutts-cuts/issues/58
+
+Bug 5
+
+Appointment now available message when editing an appointment and not changing any details #57
+
+In this scenario, if no details at changed, a separate 'info' message should be displayed stating no details were changed. Additional code will need to be added to the edit_booking function in bookings/views.py.
+Changed message and status from error to warning in bookings/views.py.
+Now displaying a yellow bootstrap message stating No appointment available or this is your booking.
+https://github.com/Becky139/mutts-cuts/issues/57
+
+Bug 6
+
+Cannot dismiss the alert element which displays the messages from views.py #54
+
+Reviewed the header structure passed from base.html.
+The navbar element spans the width of the page.
+Technically the btn-close element is visible but it is actually behind #navbar element.
+To resolve and restrict to the behavior to the alert button:
+It was given an id of #alert-button
+In style.css a z-index: 1031 was set to ensure it sat on top of the navbar element.
+https://github.com/Becky139/mutts-cuts/issues/54
 
 [Back to top](#Mutts-Cuts)
 
