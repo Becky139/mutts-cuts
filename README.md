@@ -377,8 +377,9 @@ Bug 2
 
 Carousel images change dimensions when transitioning #52
 
-Carousel image resizes when transitioning despite being of similar/size dimension to other images.
+Found in Sprint 4. Carousel image resizes when transitioning despite being of similar/size dimension to other images.
 It produces an unwanted jumping effect.
+Resolved by setting height of parent element (class="carousel-inner height-640px") to match height of carousel items.
 https://github.com/Becky139/mutts-cuts/issues/52
 
 Bug 3
@@ -395,7 +396,7 @@ Bug 4
 
 Content cut off when viewing on a small mobile device #58
 
-Issues found on two pages Services and View Bookings This can be found in Sprint 8.
+This can be found in Sprint 8 Issues found on two pages Services and View Bookings This can be found in Sprint 8.
 In MDN docs i found the following to test
 1. Remove the following properties from the viewport in the head.html file
 2. user-scalable=no, maximum-scale=1.0, minimum-scale=1.0
@@ -408,7 +409,7 @@ Bug 5
 
 Appointment now available message when editing an appointment and not changing any details #57
 
-In this scenario, if no details at changed, a separate 'info' message should be displayed stating no details were changed. Additional code will need to be added to the edit_booking function in bookings/views.py.
+This can be found in Sprint 8. In this scenario, if no details at changed, a separate 'info' message should be displayed stating no details were changed. Additional code will need to be added to the edit_booking function in bookings/views.py.
 Changed message and status from error to warning in bookings/views.py.
 Now displaying a yellow bootstrap message stating No appointment available or this is your booking.
 https://github.com/Becky139/mutts-cuts/issues/57
@@ -417,7 +418,7 @@ Bug 6
 
 Cannot dismiss the alert element which displays the messages from views.py #54
 
-Reviewed the header structure passed from base.html.
+This can be found in Sprint 8. Reviewed the header structure passed from base.html.
 The navbar element spans the width of the page.
 Technically the btn-close element is visible but it is actually behind #navbar element.
 To resolve and restrict to the behavior to the alert button:
