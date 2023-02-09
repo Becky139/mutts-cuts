@@ -549,7 +549,9 @@ CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
 
 ## Acknowledgements
 
-
+- I would like to thank my family for their valued opinions and critic during the process of design and development.
+- I would like to thank my tutor Seun, for their invaluable help and guidance throughout the process.
+- Lastly, I would like to extend my deepest gratitude to the amazing people in Slack who helped me rigorously test every aspect of my site.
 
 [Back to top](#Mutts-Cuts)
 
