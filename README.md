@@ -2,15 +2,14 @@
 
 ![mockup images](docs/readme/responsive.PNG "Website preview at different resolutions"))
 
-[View The Live Project Here]()
+[View The Live Project Here](https://muttscuts-grooming.herokuapp.com/)
 
 ## Table Of Contents
 1. [Introduction](#Introduction)
     1. [Scenario](#Scenario)
 2. [UX](#UX)
-    1. [Ideal User Demographic](#Ideal-User-Demographic)
-    2. [User Stories](#User-Stories)
-    3. [Design Thinking](#Design-Thinking)
+    1. [User Stories](#User-Stories)
+    2. [Design Thinking](#Design-Thinking)
 3. [Features](#Features)
     1. [Design Features](#Design-Features)
     2. [Existing Features](#Existing-Features)
@@ -34,7 +33,7 @@
 ## Introduction
 # Mutts Cuts
 
-Welcome to Mutts Cuts!  A  booking site for a small dog grooming business.
+Welcome to Mutts Cuts!  A booking site for a small dog grooming business.
 
 ## Scenario
 
@@ -51,11 +50,7 @@ A business with a well developed website tends to do better than its peers.  Cus
 
 With the above in mind, let's help Mutts Cuts!
 
-
-
 ## UX
-### Ideal User Demographic
-
 
 ### User-Stories
 
@@ -159,10 +154,7 @@ Update - mid project it was discovered there was no need for a calendar table.  
 
 ![Mutts Cuts ERD](docs/readme/mutts-cuts-erd-v1.png)
 
-
-
 #### Scope
-
 
 #### Structure
 The information above was then organized in a hierarchical tree structure, a site map, showing how users can navigate through the site with ease and efficiency, with the following results:
@@ -209,7 +201,6 @@ In *DevTools*, in the Elements tab, right click on the target element and select
 Useful for creating image files for readme.
 
 ### Design Features
-
 
 ### Existing Features
 
