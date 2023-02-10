@@ -156,18 +156,6 @@ Update - mid project it was discovered there was no need for a calendar table.  
 
 #### Scope
 
-#### Structure
-The information above was then organized in a hierarchical tree structure, a site map, showing how users can navigate through the site with ease and efficiency, with the following results:
-
-
-<details>
-<summary>Site Map</summary>
-
-![Site Map]()
-
-</details>
-
-
 #### Skeleton
 Wireframes were made to showcase the appearance of the site pages while keeping a positive user experience in mind. The wireframes were created using a desktop version of [Balsamiq](https://balsamiq.com/).
 
