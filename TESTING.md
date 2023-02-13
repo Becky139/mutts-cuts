@@ -32,7 +32,6 @@ path('', include("home.urls")),
 
 **3. Check own `css` and `js` files link up to `base.html` via `head.html` and `scripts.html`. These are component files that get inserted to `base.html` using Django Templates.
 
-
 *static/css/style.css*
 ``` css
 - body {
@@ -49,7 +48,6 @@ path('', include("home.urls")),
 ``` Python
     {% include 'includes/head.html' %}
 ```
-
 
 *static/js/script.js*
 ``` Javascript
@@ -95,7 +93,6 @@ This prompted a different approach to handling static files by installing the [`
 
 Success. The hero image from the static folder now works on the deployed site resolving [issue #25]
 
-
 **6. Ensure social media links in footer open in a new browser tab**
 
 These are generic for the project.  No social content exists as the business does not exist.
@@ -118,7 +115,6 @@ Extend `base.html` content to any view by using `{% extends 'base.html' %}` at t
 
 Note, the `home` app urls are already linked up to `main` urls as checked in **#2**.
 
-
 *templates/base.html*
 ``` html
     <p>base.html</p>  <!-- remove after demo for TESTING.md -->
@@ -134,7 +130,7 @@ The h1 heading containing text *Homepage* only exists in `index.html`.
 ![check-base-injecting-to-index-view.png](docs/readme/testing/06-check-base-injecting-to-index-view.png "check-base-injecting-to-index-view.png")
 
 **8 Correct `settings.py` and `.env` file setup.
-After resolving [issue #28](https://github.com/Becky139/mutts-cuts/issues/28), i found I lost my database connection when working in the the development ennvironment.  Great learning exercise on setting up [environment variables](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) and referencing them corrrectly.
+After resolving [issue #28](https://github.com/Becky139/mutts-cuts/issues/28), I found I lost my database connection when working in the development environment.  Great learning exercise on setting up [environment variables](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) and referencing them correctly.
 
 **9 Check `allauth` working with nav links.
 Allauth did the hard work for signup/login/logout.  Just had to configure `navbar.html` with Django templates to check authentication. 
@@ -192,7 +188,7 @@ To create the database table in the backend type `python3 manage.py migrate` int
 
 To reiterate, `makemigrations` are the instructions to build a table, the `migrate` command actually to builds it.
 
-It is now possible to create profiles programatically though I wanted to test with the Django admin utility.
+It is now possible to create profiles programmatically though I wanted to test with the Django admin utility.
 
 To do so the model must be registered within the apps `admin` file.
 
@@ -276,7 +272,6 @@ After reviewing Django [Allauth docs](https://django-allauth.readthedocs.io/en/l
 ``` python
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ```
-
 
 ## Exploratory tests
 
@@ -406,7 +401,6 @@ To see how much has be tested in the booking app for instance, type `coverage ru
 ### Python Validation
 [PEP8](https://www.pythonchecker.com/)
 
-
 Tool was useful for removing lines > 79 characters, particulary when working with multiline f strings. 
 
 #### services/views.py
@@ -447,9 +441,9 @@ No discernible issues using other popular browsers including [Opera](https://www
 
 ## Unresolved Issues
 
-1. HTML5 date input does not disable for weekends.  A Javascript solution is needed to prevent an appointment being created/edited for a Saturday or Sunday when the business is closed.
+1. HTML5 date input does not disable for weekends.  A Javascript solution is needed to prevent an appointment from being created/edited for a Saturday or Sunday when the business is closed.
 
-2. Issue #28 - Extend allauth signup to include request for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User.  This solution is a prerequsite to #8, #9, #10, #11
+2. Issue #28 - Extend allauth signup to include requests for phone and address fields set up in Profile table. (This table has a one to one link to default allauth User.  This solution is a prerequisite to #8, #9, #10, #11
 
 3. User Story - As a logged in user I can view a page so that I can see my personal account details by individual field. 
 4. User story - As a logged in user I can click a button so that I can change my personal account details by individual field.

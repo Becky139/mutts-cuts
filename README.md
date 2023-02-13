@@ -1,6 +1,6 @@
 # Mutts-Cuts
 
-![mockup images](docs/readme/responsive.PNG "Website preview at different resolutions"))
+![mock-up images](docs/readme/responsive.PNG "Website preview at different resolutions"))
 
 [View The Live Project Here](https://muttscuts-grooming.herokuapp.com/)
 
@@ -27,7 +27,6 @@
     2. [People](#People)
 9. [Acknowledgements](#Acknowledgements)
 
-
 ***
 
 ## Introduction
@@ -39,12 +38,12 @@ Welcome to Mutts Cuts!  A booking site for a small dog grooming business.
 
 A business tends to perform better with a steady stream of customers. It can accept walk ins and/or utilise some sort of appointment booking system.  At its simplest, this could be using a phone with a handwritten diary to record client names and their booking times.
 
-Consider *Mutts Cuts Grooming*, a hypothetical startup business whose only employee is its sole trader/owner.
+Consider *Mutts Cuts Grooming*, a hypothetical start-up business whose only employee is its sole trader/owner.
 Phone calls to book appointments can occur at anytime during business hours. Such calls can be inconvenient when lathering shampoo into someone's pet.
 
 It could help the business if customers book an appointment using a webform. This method has the advantage that appointments can also be made outside standard working hours.  In theory, this increases accessibility to business thus improving productivity and turnover.
 
-Another valid concern is that some people prefer to book a service passively using the web as opposed to making a phonecall, especially those of a shy disposition or from a younger generation as they are accustomed to this way of working.
+Another valid concern is that some people prefer to book a service passively using the web as opposed to making a phone call, especially those of a shy disposition or from a younger generation as they are accustomed to this way of working.
 
 A business with a well developed website tends to do better than its peers.  Customers can gain a better insight of its ethos, facilities and services on offer.  In theory this fosters confidence and leads to greater engagement.
 
@@ -54,7 +53,7 @@ With the above in mind, let's help Mutts Cuts!
 
 ### User-Stories
 
-Following an *Agile* paradigm, *user stories* will target customer needs and reduce embelishments on the part of the developer.  These non technical statements will aid with the incremental changes needed to build the application.
+Following an *Agile* paradigm, *user stories* will target customer needs and reduce embellishments on the part of the developer.  These non technical statements will aid with the incremental changes needed to build the application.
 
 Site user needs can broadly be split into 4 categories or epics:
 
@@ -97,7 +96,6 @@ BOOKINGS MANAGEMENT
 
 - *As a* logged in user, **I can** cancel an appointment **so that** I can cancel an appointment with the Mutts cuts
 
-
 - *As a* logged in user, **I can** request an email **so that** be reminded of an appointment
 
 - *As an** employee, **I can** view a page **so that** I can see my daily bookings or the current day
@@ -117,14 +115,13 @@ It became something of learning aid/development tracker for this project.
 Applying a *Design Thinking* approach, what *features* would users find most useful on the developed site?  How feasible is it for an inexperienced student developer to deliver prioritised features given the time constraints of a hard deadline?
 As per assessment criteria, this project must utilise CRUD functionality.  This provides a broad outline of what is needed.  A brief though shower offered the following:
 
-
-| Feature                                 | Importance | Feasability |
+| Feature                                 | Importance | Feasibility |
 |:----------------------------------------|:----------:|:-----------:|
 | View available services                 | 4          | 5           |
 | Create personal account                 | 5          | 5           |
 | Update account information              | 5          | 5           |
 | Able to cancel account                  | 5          | 5           |
-| Make an appoinment                      | 5          | 5           |
+| Make an appointment                      | 5          | 5           |
 | Review latest appointment date/time     | 3          | 4           |
 | Able to change/cancel an appointment    | 3          | 4           |
 | Send client booking detail via email    | 2          | 4           |
@@ -133,7 +130,7 @@ As per assessment criteria, this project must utilise CRUD functionality.  This 
 | Owner has calendar view of daily clients| 4          | 3           |
 | **Overall Score**                       | **40**     | **44**      |
     
-The above exercise indicates that overall importance/feasability scores were similar.  Therefore the project should be deliverable.
+The above exercise indicates that overall importance/feasibility scores were similar.  Therefore the project should be deliverable.
 
 ## Colour Schema
 The colour schema was selected from [Adobe Color](https://color.adobe.com/search?q=dog) and the accessibility was checked using the [contrast grid](https://contrast-grid.eightshapes.com) tool from [Eightshapes](https://contrast-grid.eightshapes.com).
@@ -178,7 +175,6 @@ Wireframes were made to showcase the appearance of the site pages while keeping 
 
 </details>   
 
-
 [Back to top](#Mutts-Cuts)
 
 ## Features
@@ -200,7 +196,7 @@ The user understands the site's purpose on arrival.
 
 Minimised Navigation 
 
-The whole site uses a collapsable menu to save screen real estate on all resolutions.
+The whole site uses a collapsible menu to save screen real estate on all resolutions.
 
 It occupies the whole screen to encourage the user to make a decision where to navigate to.
 
@@ -260,7 +256,7 @@ This shows the user all existing bookings.  It is intended that that they use th
 All accounts can:
 - view a page personalised with their username
 - view bookings from the current date to one year in the future
-- filter the table using a jquery support datepicker. This has been setup to allow selections from current date to one year in the future.
+- filter the table using a jQuery support date picker. This has been setup to allow selections from current date to one year in the future.
 - `Show all` button removes filtering and restores table to default.
 - create a booking by selecting `Book Now`
 - the table itself utilizes a hover effect for a whole row to emphasis the record the user is actively viewing/selecting.
@@ -283,7 +279,7 @@ Standard user accounts have:
 
 Create booking page
 There is no need to ask the user for their name when they are signed into their account.
-To simplify data entry, the form contains an `html` datepicker and dropdown menus whose options are based on the booking model.
+To simplify data entry, the form contains an `html` date picker and dropdown menus whose options are based on the booking model.
 
 ![create-booking](docs/readme/features/13-features-create-booking.PNG "create-booking")
 
@@ -338,14 +334,15 @@ CRUD functionality for the full user account including address and phone number 
 
 A good source to aid with this expansion is by [Vitor Freitas](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone).
 
-
 It would be preferable to give a user their own page to view appointments to replace the filter workaround solution in `view bookings`.
 
-Within that area, discrete option buttons representing a time could to work in conjunction with a datepicker.
+Within that area, discrete option buttons representing a time could to work in conjunction with a date picker.
 
-Javascript would be needed to manipulate the DOM dependent on the result of a queryset of existing Booking table records.
+JavaScript would be needed to manipulate the DOM dependent on the result of a query set of existing Booking table records.
 
 The state of these buttons may be changed by adding a class to give a muted style or even hide.
+
+Add email booking conformation so the user receives a personalized email with the date and time of there groom.
 
 [Back to top](#Mutts-Cuts)
 
@@ -358,7 +355,7 @@ Testing Issue Checking static folder is working on deployed site #28
 
 this is in Sprint 2 of my projects. Any images stored in static/img/ folder should display when deployed. Remember to delete the DISABLE_COLLECTSTATIC config var in Heroku Settings by clicking on the X.
 When I deleted this config var and tried to redeploy, the build log stated python manage.py collectstatic --noinput.
-This prompted a different approach to handling static files by installing the dotenv python package. From there i updated the requirements.txt file and settings.py and env.py files in the project before pushing them to GitHub again.
+This prompted a different approach to handling static files by installing the dotenv python package. From there I updated the requirements.txt file and settings.py and env.py files in the project before pushing them to GitHub again.
 https://github.com/Becky139/mutts-cuts/issues/28
 
 Bug 2
@@ -385,7 +382,7 @@ Bug 4
 Content cut off when viewing on a small mobile device #58
 
 This can be found in Sprint 8 Issues found on two pages Services and View Bookings This can be found in Sprint 8.
-In MDN docs i found the following to test
+In MDN docs I found the following to test
 1. Remove the following properties from the viewport in the head.html file
 2. user-scalable=no, maximum-scale=1.0, minimum-scale=1.0
 But then found the solution below to fix the issue
@@ -397,7 +394,7 @@ Bug 5
 
 Appointment now available message when editing an appointment and not changing any details #57
 
-This can be found in Sprint 8. In this scenario, if no details at changed, a separate 'info' message should be displayed stating no details were changed. Additional code will need to be added to the edit_booking function in bookings/views.py.
+This can be found in Sprint 8. In this scenario, if no details at changed, a separate 'info' message should be displayed stating no details were changed. Additional code will need to be added to the edit booking function in bookings/views.py.
 Changed message and status from error to warning in bookings/views.py.
 Now displaying a yellow bootstrap message stating No appointment available or this is your booking.
 https://github.com/Becky139/mutts-cuts/issues/57
@@ -409,7 +406,7 @@ Cannot dismiss the alert element which displays the messages from views.py #54
 This can be found in Sprint 8. Reviewed the header structure passed from base.html.
 The navbar element spans the width of the page.
 Technically the btn-close element is visible but it is actually behind #navbar element.
-To resolve and restrict to the behavior to the alert button:
+To resolve and restrict to the behaviour to the alert button:
 It was given an id of #alert-button
 In style.css a z-index: 1031 was set to ensure it sat on top of the navbar element.
 https://github.com/Becky139/mutts-cuts/issues/54
@@ -418,7 +415,7 @@ https://github.com/Becky139/mutts-cuts/issues/54
 
 ## Technologies Used
 
-### Main Lanuages Used
+### Main Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to Python Wiki")
@@ -429,7 +426,7 @@ https://github.com/Becky139/mutts-cuts/issues/54
 - [Lucidchart](https://lucid.co/) to produce ERD's
 - [Adobe Color](https://color.adobe.com/) to research colour schemas.
 - [Eightshapes](https://contrast-grid.eightshapes.com) to review colour schema accessibility.
-- [GitHub](https://github.com/) for repo storage and Agile project management using kanban boards/issue tracking.
+- [GitHub](https://github.com/) for repo storage and Agile project management using Kanban boards/issue tracking.
 - [Heroku](https://id.heroku.com/) for project deployment to the world wide web.
 - [Python3 ](https://docs.python.org/3/) with the following modules
     - asgiref==3.5.0
@@ -458,7 +455,6 @@ https://github.com/Becky139/mutts-cuts/issues/54
 - [JSHint](https://jshint.com/) JS linter
 - [PEP8](https://www.pythonchecker.com/) Python linter
 
-
 [Back to top](#Mutts-Cuts)
 
 ## Testing
@@ -467,7 +463,7 @@ Refer to [TESTING.md](TESTING.md) for details on manual and automated testing.
 - manual testing
 - automated testing
 - Lighthouse site performance checks
-- linter checks on html, css, js and python code
+- linter checks on HTML, CSS, JavaScript and Python code
 
 ### Deployment
 
@@ -475,25 +471,25 @@ The site was deployed early closely following Code Institute guides.
 
 This process has been documented separately in [DEPLOYMENT.md](DEPLOYMENT.md)
 
-Update - More dependancies were added after deployment.
+Update - More dependencies were added after deployment.
 [WhiteNoise](http://whitenoise.evans.io/en/stable/) was used instead of [Cloudinary](https://cloudinary.com/).
 
 For a small site, it's better for the web app to serve its own static files rather than rely on a 3rd party API.
 It was also much easier to setup.
 
-Update - there was an unforseen deployment issue with [Heroku](https://status.heroku.com/incidents/2413).  As described by the link this was to prevent unauthorised access to gitHub repositories.
+Update - there was an unforeseen deployment issue with [Heroku](https://status.heroku.com/incidents/2413).  As described by the link this was to prevent unauthorised access to GitHub repositories.
 
 This was resolved by deploying to Heroku via the CLI in Gitpod.
 
-1. Login to heroku and enter your details.
-command: heroku login -i
-2. Get your app name from heroku.
-command: heroku apps
-3. Set the heroku remote. (Replace <app_name> with your actual app name)
-command: heroku git:remote -a <app_name>
-4. Add, commit and push to github
+1. Login to Heroku and enter your details.
+command: Heroku login -i
+2. Get your app name from Heroku.
+command: Heroku apps
+3. Set the Heroku remote. (Replace <app_name> with your actual app name)
+command: Heroku git:remote -a <app_name>
+4. Add, commit and push to GitHub
 command: git add . && git commit -m "Deploy to Heroku via CLI"
-5. Push to both github and heroku
+5. Push to both github and Heroku
 command: git push origin main
 command: git push heroku main
 
@@ -502,7 +498,7 @@ MFA/2FA enabled?
 2. Scroll down to the API Key section and click Reveal. Copy the key.
 3. Enter the command: heroku_config , and enter your api key you copied when prompted
 4. Complete the steps above, if you see an input box at the top middle of the editor...
- a. enter your heroku username
+ a. enter your Heroku username
  b. enter the api key you just copied
 
 ## Credits
@@ -515,22 +511,21 @@ MFA/2FA enabled?
 - Inspiration for navbar design from [Vandelay Design](https://www.vandelaydesign.com/inspirationalnavigation-menus/)
 - Landing page image from [Google Images](https://images.google.co.uk/)
 - For dog breed [images](https://www.purina.co.nz/find-a-pet/dog-breeds) used in the carousel element.
-- Datepicker customisation from [Jquery](https://jqueryui.com/datepicker/)
-- [Will McCutchen](https://strftime.org/) for his useful string from time cheatsheet.
-
+- Date picker customisation from [Jquery](https://jqueryui.com/datepicker/)
+- [Will McCutchen](https://strftime.org/) for his useful string from time cheat sheet.
 
 ### People
 
 My thanks to:
 - [Tutorials Point](https://www.tutorialspoint.com/python_data_access/python_postgresql_drop_table.htm) for guidance working directly with Postgres tables.
-- Youtube tutorial *58 - Django urls, includes, and app name - Python & Django 3.2 Tutorial Series* by [
+- YouTube tutorial *58 - Django urls, includes, and app name - Python & Django 3.2 Tutorial Series* by [
 CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
 - [AJ Welch](https://chartio.com/resources/tutorials/how-to-filter-for-empty-or-null-values-in-a-django-queryset/) for a bolstering my understanding of Django lookups.
 - [LearnerAndLearn](https://stackoverflow.com/a/65065813) for there explanation on the difference between multiple arguments and chain filtering and how that affects SQL queries.
 - For his useful Bootstrap revision sheet, [Alexander Rechsteiner](https://hackerthemes.com/bootstrap-cheatsheet/)
 - [Guillermo Brachetta](https://code-institute-room.slack.com/files/UQG5DAG7K/F01RH23KDV4/django-env.pdf) for his Environment Variable setup guide.  In the end I choose an alternative method but it could be useful for future development.
 - Fellow students, David Bowers and Helena Johansson for their moral support.  They kept me going during periods of self doubt.
-- [Jaysha](https://ordinarycoders.com/blog/article/django-messages-framework) at ordinarycoders for her breakdown of django messaging with Bootstrap.
+- [Jaysha](https://ordinarycoders.com/blog/article/django-messages-framework) at ordinarycoders for her breakdown of Django messaging with Bootstrap.
 - [W3schools](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) for working with bootstrap.
 
 [Back to top](#Mutts-Cuts)
@@ -544,3 +539,5 @@ CodingEntrepreneurs](https://www.youtube.com/watch?v=icVke1tJ6aI)
 [Back to top](#Mutts-Cuts)
 
 ***
+
+

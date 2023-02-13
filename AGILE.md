@@ -3,7 +3,7 @@
 ## Sprint 1
 - Setup repo
 - Create Django project
-- Install basic dependancies and add to requirements
+- Install basic dependencies and add to requirements
 - Create procfile to deploy to Heroku
 - Create app on Heroku
 - Link GitHub repo to Heroku app
@@ -17,7 +17,7 @@
 - Mock up initial database design and document in readme
 - List and link technologies used in readme
 
-- Learn to use Github projects. Create user stories and drop onto kanban board
+- Learn to use GitHub projects. Create user stories and drop onto Kanban board
 
 ### Reflections
 
@@ -49,7 +49,6 @@ Also it's useful to have some templates to link to models via views when the tim
 
 TWIL (This week I learned) after creating a new project, cards can be dragged across from the add card area.  Also helps to use checkboxes to tick off smaller tasks relating to a larger one.
 
-
 ![01](docs/readme/agile/sprint-2-subtasks-01.png)
 
 ![02](docs/readme/agile/sprint-2-kanban-use-02.PNG)
@@ -66,13 +65,13 @@ With a basic navbar in place, this will have to be updated as new views/respecti
 
 *Register*, *Login* and *Appointments* in the menu have been purposefully disabled for now.
 
-Update - change navbar to an offcanvas type.  Closer to wireframe design.  
+Update - change navbar to an off canvas type.  Closer to wireframe design.  
 
 Update - use 5 list items in menu, home, our services, register, login, Book Appointment.
 
 Focus on finishing the landing page and creating an *Our Services* page. Link up as necessary.
 
-Update - change navbar to an offcanvas type.  Closer to wireframe design.  
+Update - change navbar to an off canvas type.  Closer to wireframe design.  
 
 Update - use 5 list items in menu, home, our services, register, login, Book Appointment.
 
@@ -82,7 +81,7 @@ Removed User Story #17 from sprint 2 project - As a site user I can view the sit
 
 Removed User Story #18 from sprint 2 project - As a unregistered user I can view the landing page so that I understand the site's purpose
 
-Technically services are a different function.  Time for a new *services* app!  #18 can drop into a future project week.  I feel it's best to get authenication working next as this affects the navbar.  Next logical step to complete that.
+Technically services are a different function.  Time for a new *services* app!  #18 can drop into a future project week.  I feel it's best to get authentication working next as this affects the navbar.  Next logical step to complete that.
 
 I want to fix [issue #5](https://github.com/Becky139/mutts-cuts/issues/28) to wrap up this week.
 
@@ -96,7 +95,7 @@ I want to fix [issue #5](https://github.com/Becky139/mutts-cuts/issues/28) to wr
 - develop the landing page a little more using bootstrap. Aim to get the hero image to display correctly. Use its FSF approach to develop the frontend faster.
 
 ### Reflections
-This week it wanted to focus on user accounts and authentication as that alters the navbar options through use of django templates.
+This week it wanted to focus on user accounts and authentication as that alters the navbar options through use of Django templates.
 Also, I realised I had to revise my use of Bootstrap as much of this knowledge hasn't been used in a few months.  By developing a generic landing page using Bootstrap I can speed up the creation of future templates.  Bespoke css/js/jquery can be added at a later time for a less derivative site.
 
 Seven user stories satisfied this week.
@@ -109,13 +108,12 @@ Seven user stories satisfied this week.
 - Build Services page
 
 ### Reflections
-This week I wanted to take the allauth package and style it to suit myu website.  Much of the instructed can from the relevant CI unit presented by Matt Rudge.  Towards the later part of the week I want to extend the alluth user class to suit my project.
+This week I wanted to take the allauth package and style it to suit my website.  Much of the instructed can from the relevant CI unit presented by Matt Rudge.  Towards the later part of the week I want to extend the alluth user class to suit my project.
 A second outcome was getting comfortable wiring up a new page/template with Django.  The template must be set up correctly in a directory which must then be rendered by the view.  That view must then be referenced in the app url which in turn is referenced in the main project folder urls file.  In future I must remember to add the app to the installed apps list in main/settings.py!
 
-1 unfixed [bug](https://github.com/Becky139/mutts-cuts/issues/52) were the carousel image resizes when transitioning despite being of similar/size dimension to other images.  It produces an unwanted jumping effect.  Come back to this as I really need to makle a start on models.
+1 unfixed [bug](https://github.com/Becky139/mutts-cuts/issues/52) were the carousel image resizes when transitioning despite being of similar/size dimension to other images.  It produces an unwanted jumping effect.  Come back to this as I really need to make a start on models.
 
-Allauth sped up development of an authentication system for the site.  However a few extra custom fields were desired for the project including user `address` and `contact number`.  As I already performed migrations I choose not to extend the AbstractUser model.  Rather I created a new model with a one-to-one relationship to the existing User Model through a OneToOneField.  This was suitable as the extra information was desirable but not related to the authentication process.  Note, a bit of extra work will likely be needed to display the custom model but its a safer overall option. Still to resolve [bug](https://github.com/Becky139/mutts-cuts/issues/53).
-
+Allauth sped up development of an authentication system for the site.  However a few extra custom fields were desired for the project including user `address` and `contact number`.  As I already performed migrations I choose not to extend the Abstract User model.  Rather I created a new model with a one-to-one relationship to the existing User Model through a OneToOneField.  This was suitable as the extra information was desirable but not related to the authentication process.  Note, a bit of extra work will likely be needed to display the custom model but its a safer overall option. Still to resolve [bug](https://github.com/Becky139/mutts-cuts/issues/53).
 
 ![01](docs/readme/agile/sprint-4-kanban-use.png)
 
@@ -145,9 +143,9 @@ Considering the above, the booking model **will** have to be updated.  First tho
 
 This has a downside. It isn't possible to use the `timedelta` method on the booking model to add an end time for an appointment.  It only works on `datetime` and not `time` datatype.
 
-The calendar model in the ERD isn't required.  It's a pointless replication with hindsight so keep it simple.  A calendar is a way to display database objects so I can create one using a library such as `calendar.py` or take a premade one from a useful site such as [Colorlib](https://colorlib.com/wp/template/calendar-20/).  Event logic is still required.  A bit of Jquery on individual calendar elements can trigger events as needed...
+The calendar model in the ERD isn't required.  It's a pointless replication with hindsight so keep it simple.  A calendar is a way to display database objects so I can create one using a library such as `calendar.py` or take a premade one from a useful site such as [Colorlib](https://colorlib.com/wp/template/calendar-20/).  Event logic is still required.  A bit of jQuery on individual calendar elements can trigger events as needed...
 
-Or do I simply display daily appointments as a list in a django template.  This would be simplier.
+Or do I simply display daily appointments as a list in a Django template.  This would be simpler.
 
 Final thought of the week.  You can follow instructions to the letter.  Things you assume will work because you are told don't always.  To be a better developer, assume nothing.
 
@@ -159,7 +157,7 @@ Final thought of the week.  You can follow instructions to the letter.  Things y
 - Create view and functionality for basic CRUD operations.
 
 ### Reflections
-Keeping it simple, when the user selects `Book Appointment` they are directed to the `view_booking` template.  Here they can see the bookings already made.  In theory, they can work out what appointments are available. (Not perfect but a starting point. I'd like to show them available appointments only).  Will require a bit of logic with django templates... Continue to research....
+Keeping it simple, when the user selects `Book Appointment` they are directed to the `view_booking` template.  Here they can see the bookings already made.  In theory, they can work out what appointments are available. (Not perfect but a starting point. I'd like to show them available appointments only).  Will require a bit of logic with Django templates... Continue to research....
 
 ![01](docs/readme/agile/sprint-6-kanban-use.png)
 
@@ -167,20 +165,20 @@ Keeping it simple, when the user selects `Book Appointment` they are directed to
 - Develop a means to display only appointments for a given day using a method like a date picker...
 - All logged in users are able to create, view, edit and delete other users appointments.  Restrict this to view only.  We only want them to see were slots are taken on a given time/day.
 - When performing a CRUD operation, give the user a chance to confirm if they want to proceed.
-- At this stage Django template language is used to differentiate between superuser & staff acess and standard user access.
+- At this stage Django template language is used to differentiate between superuser & staff access and standard user access.
 
 ### Reflections
 This is were the project goes from closely following generic tutorials to becoming more unique.
 
-Table row elements were filtered using javascript to achieve filtering by user.
+Table row elements were filtered using JavaScript to achieve filtering by user.
 
-Learn how to use querysets within Django.  Powerful and usable.
+Learn how to use query sets within Django.  Powerful and usable.
 
 Defensive programming.  Effectively best to make someone confirm an action.  Modals can be useful for this.
 
 ![01](docs/readme/agile/sprint-7-kanban-use.PNG "01")
 
-## Sprint 8 - Takeoff & Punchlist
+## Sprint 8 - Take-off & Punchlist
 - Prevent booking clashes
 - give user feedback when logging in / out
 - give user feedback when successfully/unsuccessfully creating and editing bookings
