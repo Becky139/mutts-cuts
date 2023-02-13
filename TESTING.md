@@ -437,7 +437,13 @@ Tool was useful for removing lines > 79 characters, particulary when working wit
 
 ## Other browsers
 
-No discernible issues using other popular browsers including [firefox](https://www.mozilla.org/en-GB/firefox/new/) and [MS Edge](https://www.microsoft.com/en-us/edge).
+No discernible issues using other popular browsers including [Opera](https://www.opera.com/) [Chrome](https://www.google.com/intl/en_uk/chrome/) and [MS Edge](https://www.microsoft.com/en-us/edge).
+
+![Chrome](docs/readme/testing/18-chrome.PNG)
+
+![Edge](docs/readme/testing/19-edge.PNG)
+
+![Opera](docs/readme/testing/20-oprea.PNG)
 
 ## Unresolved Issues
 
