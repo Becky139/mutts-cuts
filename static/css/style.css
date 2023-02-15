@@ -7,7 +7,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    padding-bottom: ;
+    padding: 5px;
 }
 
 /* Mystery Machine Colours*/
@@ -96,7 +96,7 @@ footer {
 }
 
 .footer-content a:hover {
-    color: rgba(var(--theme-six), 1);
+    color: rgba(var(--theme-five), 1);
 }
 
 /* general buttons */
@@ -120,7 +120,7 @@ footer {
 
 /* booking table */
 #view-booking-table tbody tr:hover {
-    background-color: rgba(var(--theme-five), 1);
+    background-color: rgba(var(--theme-six), 1);
 }
 
 #view-booking-table td>a {
