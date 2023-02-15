@@ -22,9 +22,11 @@
     /* dark cream D9D0BF*/
     --theme-four: 217, 208, 191;
     /* bright orange F25C05 */
-    --theme-five: 255,141,0;
-
+    --theme-five: 242, 44, 5;
+    /* lighter zapped  D3CE3C*/
+    --theme-six: 211,206,60;
 }
+
 
 /* html */
 html {
@@ -94,7 +96,7 @@ footer {
 }
 
 .footer-content a:hover {
-    color: rgba(var(--theme-one), 1);
+    color: rgba(var(--theme-six), 1);
 }
 
 /* general buttons */
@@ -112,9 +114,9 @@ footer {
 }
 
 .selected{
-    color :rgb(0, 247, 255);
-    text-decoration: underline;
-  }
+    color :black;
+    text-decoration: underline, bold;  
+    }
 
 /* booking table */
 #view-booking-table tbody tr:hover {
