@@ -220,10 +220,6 @@ footer {
     width: 100%;
 }
 
-input[type=text] {
-    color: rgba(var(--theme-five), 1);
-}
-
 /* set alert buttons above narbar element in header */
 #alert-button {
     z-index: 1031;
