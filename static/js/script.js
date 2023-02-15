@@ -57,3 +57,11 @@ const removeFilter = (e) => {
 };
 
 $(refreshBtn).on("click", removeFilter);
+$(".btn").click(function(){
+
+    var val = $(this).val();
+    $('.btn').removeClass('selected');
+    $(this).addClass('selected');
+    $('.selectedVal').val(val);
+  
+  });

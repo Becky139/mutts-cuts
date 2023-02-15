@@ -7,6 +7,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    padding-bottom: ;
 }
 
 /* Mystery Machine Colours*/
@@ -21,7 +22,8 @@
     /* dark cream D9D0BF*/
     --theme-four: 217, 208, 191;
     /* bright orange F25C05 */
-    --theme-five: 242, 44, 5;
+    --theme-five: 255,141,0;
+
 }
 
 /* html */
@@ -92,7 +94,7 @@ footer {
 }
 
 .footer-content a:hover {
-    color: rgba(var(--theme-five), 1);
+    color: rgba(var(--theme-one), 1);
 }
 
 /* general buttons */
@@ -108,6 +110,11 @@ footer {
     border: 3px solid rgba(var(--theme-two), 1);
     color: black;
 }
+
+.selected{
+    color :rgb(0, 247, 255);
+    text-decoration: underline;
+  }
 
 /* booking table */
 #view-booking-table tbody tr:hover {
