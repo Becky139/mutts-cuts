@@ -7,7 +7,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    padding: 5px;
 }
 
 /* Mystery Machine Colours*/
@@ -23,8 +22,8 @@
     --theme-four: 217, 208, 191;
     /* bright orange F25C05 */
     --theme-five: 242, 44, 5;
-    /* lighter zapped  D3CE3C*/
-    --theme-six: 211,206,60;
+    /* lighter zapped  f4f3d0*/
+    --theme-six: 243, 241, 194;
 }
 
 
@@ -104,7 +103,7 @@ footer {
     background: rgba(var(--theme-one), 1);
     border: 3px solid black;
     color: black;
-    min-width: 200px
+    min-width: 200px;
 }
 
 .btn:hover {
@@ -118,7 +117,24 @@ footer {
     text-decoration: underline, bold;  
     }
 
+/* sign up form */
+
+.signup {
+    text-align: center;
+}
+
+.errorlist {
+    font-weight: bold;
+    color: red;
+    list-style: none;
+    display: block;
+}
+
 /* booking table */
+
+#view-booking-table {
+    margin-top: 20px;
+}
 #view-booking-table tbody tr:hover {
     background-color: rgba(var(--theme-six), 1);
 }
@@ -132,7 +148,7 @@ footer {
 #view-booking-table td a:hover {
     background-color: rgba(var(--theme-two), 1);
     border-radius: 3px;
-    padding: 3px 0;
+    padding: 5px;
 }
 
 #view-booking-table td button a {
