@@ -112,7 +112,7 @@
                         <td>{{ booking.date }}</td>
                         <td>{{ booking.start_time }}</td>
                         <td></td>
-                        <td>Booked</td>
+                        <td class="booked">Booked</td>
                         {% endif %}
                         {% endif %}
                         <!--apply an edit & cancel link to each row if superuser staff user the user.
@@ -125,6 +125,7 @@
                             <a data-bs-toggle="modal" data-bs-target="#modal-cancel-{{ forloop.counter }}">
                                 Cancel
                             </a>
+                        </td> 
                             <!-- modal cancellation confirmation -->
                             <div class="modal fade" id="modal-cancel-{{ forloop.counter }}" tabindex="-1"
                                 aria-labelledby="modal-cancel-label-{{ forloop.counter }}" aria-hidden="true">
