@@ -163,6 +163,10 @@ footer {
     color: rgba(var(--theme-two), 1);
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 #help {
     color: rgba(var(--theme-five), 1);
 }
