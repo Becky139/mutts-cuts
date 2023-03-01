@@ -196,6 +196,10 @@ footer {
 	font-weight: 500;
 }
 
+.modal-footer {
+	justify-content: center
+}
+
 /* view booking datepicker */
 .ui-datepicker {
 	background-color: rgba(var(--theme-three), 1);
