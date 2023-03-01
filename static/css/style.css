@@ -291,6 +291,7 @@ Credit to Codepen https://codepen.io/team/css-tricks/pen/wXgJww?editors=1100 */
 	td,
 	tr {
 		display: block;
+		padding: 5px;
 	}
 
 	/* Hide table headers (but not display: none;, for accessibility) */
