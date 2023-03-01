@@ -1,40 +1,40 @@
 <nav class="navbar navbar-light fixed-top">
   <div>
-    <button class="navbar-toggler bg-light rounded mx-2" aria-label="Menu" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button class="navbar-toggler bg-light rounded mx-2" aria-label="Menu" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mutts Cuts</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mutts Cuts</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'services' %}">Our Services</a>
+                  </li>
+                  {% if user.is_authenticated %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'view_booking' %}">Book Appointment</a>
+                  </li>
+                  {% else %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                  </li>
+                  {% endif %}
+              </ul>
+          </div>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'services' %}">Our Services</a>
-          </li>
-          {% if user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'view_booking' %}">Book Appointment</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
   </div>
 </nav>

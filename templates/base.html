@@ -1,29 +1,25 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    {% include 'includes/head.html' %}
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-        <!-- Messages/Alerts -->
-        {% include 'includes/messages.html' %}
-        <!-- Navigation -->
-        {% include 'includes/navbar.html' %}
-    </header>
-    {% block content %}
-    <!-- Content -->
-    {% endblock %}
-    <!-- Footer -->
-    {% block footer %}
-    {% include 'includes/footer.html' %}
-    {% endblock %}
-    <!-- Scripts -->
-    {% include 'includes/scripts.html' %}
-</body>
-
+    <head>
+        {% include 'includes/head.html' %}
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Messages/Alerts -->
+            {% include 'includes/messages.html' %}
+            <!-- Navigation -->
+            {% include 'includes/navbar.html' %}
+        </header>
+        {% block content %}
+        <!-- Content -->
+        {% endblock %}
+        <!-- Footer -->
+        {% block footer %}
+        {% include 'includes/footer.html' %}
+        {% endblock %}
+        <!-- Scripts -->
+        {% include 'includes/scripts.html' %}
+    </body>
 </html>

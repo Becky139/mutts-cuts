@@ -7,7 +7,5 @@ def services(request):
     Services view
     """
     services = Service.objects.all()
-    context = {
-        'services': services
-    }
-    return render(request, 'services/services.html', context)
+    context = {"services": services}
+    return render(request, "services/services.html", context)

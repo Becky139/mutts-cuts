@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
 <main class="d-flex justify-content-center align-items-center text-center">
     <div class="container-fluid">
@@ -16,7 +15,7 @@
                 Are you being <em><strong>hounded</strong></em> for a treat?
             </div>
             <div class="col-md-12">
-                A trip to <em><strong>The Kennel</strong></em> will be <em><strong>paws-itively</strong></em>
+                A trip to <em><strong>Mutts Cuts</strong></em> will be <em><strong>paws-itively</strong></em>
                 satisfying!
             </div>
             <!-- carousel -->
@@ -43,13 +42,13 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
@@ -75,13 +74,13 @@
                 <a class="btn" href="{% url 'view_booking' %}" role="button">Book Now</a>
             </div>
         </div>
-            {% else %}
-                <div class="row">
-                    <div class="col">
-                        <a class="btn" href="{% url 'account_signup' %}" role="button">Join Us</a>
-                        <a class="btn" href="{% url 'account_login' %}" role="button">Members</a>
-                    </div>
-                </div>
+        {% else %}
+        <div class="row">
+            <div class="col">
+                <a class="btn" href="{% url 'account_signup' %}" role="button">Join Us</a>
+                <a class="btn" href="{% url 'account_login' %}" role="button">Members</a>
+            </div>
+        </div>
         {% endif %}
     </div>
 </main>

@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 # from current directory model file import Profile model
 from .models import Profile
 
