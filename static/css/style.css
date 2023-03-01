@@ -138,7 +138,7 @@ footer {
 }
 
 #view-booking-table tbody tr:hover {
-	background-color: rgba(var(--theme-six), 1);
+	background-color: rgba(var(--theme-five), 1);
 }
 
 #view-booking-table td>a {
@@ -148,7 +148,7 @@ footer {
 }
 
 #view-booking-table td a:hover {
-	background-color: rgba(var(--theme-one), 1);
+	background-color: rgba(var(--theme-two), 1);
 	border-radius: 3px;
 	padding: 5px;
 }
