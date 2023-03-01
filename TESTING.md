@@ -66,7 +66,7 @@ console.log("Homepage")
 
 The test is successful as the `body` has a greenyellow background colour and `Homepage` text is logged to the console in Chrome.
 
-![check-css-js-links-to-base-template](docs/readme/testing/02-check-css-js-links-to-base-template.png "check-css-js-links-to-base-template")
+![check-css-js-links-to-base-template](docs/readme/testing/02-check-css-js-links-to-base-template.PNG "check-css-js-links-to-base-template")
 
 **4. Getting the favicon to display on the browser tab**
 
@@ -161,13 +161,25 @@ A test account was created to check it worked.
 </ul>
 ```
 *Unregistered/Logged out menu*
+
 ![check-logged-out-menu](docs/readme/testing/07-check-logged-out-menu.png "check-logged-out-menu")
+
+
 *Login page*
+
 ![allauth-login-page](docs/readme/testing/08-allauth-login-page.png "allauth-login-page")
+
+
 *Registered/Logged in menu*
+
 ![check-logged-in-menu](docs/readme/testing/09-check-logged-in-menu.png "check-logged-in-menu")
+
+
 *Logout page*
+
 ![allauth-logout-page](docs/readme/testing/10-allauth-logout-page.png "allauth-logout-page")
+
+
 *Proof of Registration in site admin*
 
 ![reg-users-site-admin-page](docs/readme/testing/11-reg-users-site-admin-page.png "reg-users-site-admin-page")

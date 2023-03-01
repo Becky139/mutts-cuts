@@ -139,8 +139,6 @@ The developed site should appear bright to contrast with the negative space.
 
 In keeping with the dog theme, colours are based of the *Mystery Machine* as seen in [Scooby-Doo](https://en.wikipedia.org/wiki/Scooby-Doo).
 
-![colour-schema](docs/readme/colour-schema.png "colour schema")
-
 ![colour-accessibility](docs/readme/colour-accessibility.png "colour accessibility")
 
 ## Database Design
