@@ -1,7 +1,4 @@
-
--Beautified JavaScript-
- 
-/* jshint esversion: 8, jquery: true */
+ /* jshint esversion: 8, jquery: true */
 
 
 /**
