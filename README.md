@@ -1,6 +1,6 @@
 # Mutts-Cuts
 
-![mock-up images](docs/readme/responsive.PNG "Website preview at different resolutions"))
+![mock-up images](docs/readme/responsive.PNG "Website preview at different resolutions")
 
 [View The Live Project Here](https://muttscuts-grooming.herokuapp.com/)
 
